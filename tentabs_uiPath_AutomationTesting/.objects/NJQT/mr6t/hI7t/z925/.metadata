@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT TextField1",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "z925Yz1fKkCrkoTQlkR_VQ",
+  "Reference": "HoUjq_NeVkSz-nEACedS7Q/z925Yz1fKkCrkoTQlkR_VQ",
+  "ParentRef": "HoUjq_NeVkSz-nEACedS7Q/hI7tTDMAK0CR_nrLpsZMtQ",
+  "Created": "2026-02-19T12:55:08.8089516Z",
+  "Updated": "2026-02-19T12:55:08.8089516Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

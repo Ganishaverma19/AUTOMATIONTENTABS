@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QaUezUNtZUOIXm_3NEF1Aw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/checkouts/cn/hWN8xzv4L05ojoxhf8UoFY8Y/en-in" CVScreenId="5a17622c-1cdf-4489-b52a-5e4825ecabe4" DesignTimeRectangle="740, 662, 236, 74" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='TextField5' tag='INPUT' type='text' class='_7ozb2uu _7ozb2ut _1fragemsm _1fragemza _1fragemvp _1fragemye _7ozb2ux _7ozb2uw _1fragemyw _1fragemyr _1fragemz6 _7ozb2u15 _7ozb2u1a _7ozb2u1s _7ozb2uv' matching:class='fuzzy' fuzzylevel:class='0.0' placeholder='PIN code' aaname='PIN code' /&gt;" Guid="dcd9a915-e6d8-427c-bb87-c58c85cef440" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - TenTabs Medical Devices' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="a74eb55450bd8f3f40b1c1f83b885fd2.jpg" xmlns="">0fgbKSZFko0KU_oEn-2y-Tg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

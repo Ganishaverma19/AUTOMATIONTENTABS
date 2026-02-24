@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Same as shipping address",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "HVuEkOagRUOHf6ZNmKjdng",
+  "Reference": "HoUjq_NeVkSz-nEACedS7Q/HVuEkOagRUOHf6ZNmKjdng",
+  "ParentRef": "HoUjq_NeVkSz-nEACedS7Q/hI7tTDMAK0CR_nrLpsZMtQ",
+  "Created": "2026-02-20T04:45:28.7949547Z",
+  "Updated": "2026-02-20T04:45:28.7949547Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

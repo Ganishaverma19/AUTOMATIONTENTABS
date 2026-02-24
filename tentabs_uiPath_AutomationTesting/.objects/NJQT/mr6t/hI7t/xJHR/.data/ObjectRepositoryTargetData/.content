@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TVW8m8gziEa-wYzUKq5L2A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/checkouts/cn/hWN8xB1A9wpym9us6tdGWgpW/en-in" CVScreenId="1322d604-fe9c-49c6-aff3-cb4dfe8956fc" CvElementArea="219, 723, 373, 80" CvType="InputBox" DesignTimeRectangle="223, 726, 365, 74" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='TextField0' tag='INPUT' type='text' class='_7ozb2uu _7ozb2ut _1fragemsm _1fragemza _1fragemvp _1fragemye _7ozb2ux _7ozb2uw _1fragemyw _1fragemyr _1fragemz6 _7ozb2u15 _7ozb2u1a _7ozb2u1s _7ozb2uv' aaname='First name' /&gt;" Guid="bed5f01c-ea5f-4394-b8be-1ab524c12e35" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - TenTabs Medical Devices' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1322d604-fe9c-49c6-aff3-cb4dfe8956fc" CvElementArea="219, 723, 373, 80" CvType="InputBox" DesignTimeRectangle="240, 740, 82, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' class='cektnc3 cektnc1 _1fragemsc _1fragemyf _1fragemza _1fragemyw _1fragemyr _1fragemz6 _1fragemz7' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='First name' /&gt;" Guid="04443e0a-feb5-47c2-96e4-9b519748183c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="aff56b08a2455070b47879013138b7b1.jpg" xmlns="">0pD4xmIj5mkmNs8OsRYisXA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

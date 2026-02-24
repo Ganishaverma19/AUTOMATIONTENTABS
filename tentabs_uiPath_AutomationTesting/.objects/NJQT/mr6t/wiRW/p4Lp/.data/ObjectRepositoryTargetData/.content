@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Pc1QkisMAkuaf6vBqTWS3Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/account" CVScreenId="e79a937a-e2d9-482e-8063-001a1875c36d" DesignTimeRectangle="589, 635, 159, 29" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='STRONG' /&gt;" Guid="358e5242-49a7-43ba-8c63-fca6117e223b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Account' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="54ba52cdd7f50adace0ff9497a3aa2ef.jpg" xmlns="">0NpcSWE6BMUuEAsOPDBCFZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

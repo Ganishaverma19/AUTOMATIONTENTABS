@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TXWZdQTU7U6IrXDNE5_f6w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/cart" CVScreenId="eae2ec17-d27e-40e5-ba75-99f1aeaa0835" CvElementArea="1584, 747, 274, 76" CvTextArea="1655, 776, 116, 21" CvTextArgument="Check Out" CvType="Button" DesignTimeRectangle="1591, 750, 246, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="655c681b-0662-4c3a-aa44-11b44830c6b0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Your Shopping Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="050f5fb4764738d5a337d690ce5a0f54.jpg" xmlns="">0dqJe48Yto0KbameQlvHPeA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

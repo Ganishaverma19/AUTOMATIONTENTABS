@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Q0SlagzZIUOFq3qyQLqrew" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/checkouts/cn/hWN8xB1A9wpym9us6tdGWgpW/en-in" CVScreenId="a1cf04fa-04e1-48e5-a8b7-fd38b7489f1d" CvElementArea="219, 413, 760, 79" CvType="InputBox" DesignTimeRectangle="223, 416, 753, 73" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='TextField3' tag='INPUT' type='text' class='_7ozb2uu _7ozb2ut _1fragemsm _1fragemza _1fragemvp _1fragemye _7ozb2ux _7ozb2uw _1fragemyw _1fragemyr _1fragemz6 _7ozb2u15 _7ozb2u1a _7ozb2u1s _7ozb2uv' placeholder='Apartment, suite, etc. (optional)' aaname='Apartment, suite, etc. (optional)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a7c6b3f0-dca3-451e-8a30-2cf8a65ba494" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - TenTabs Medical Devices' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8ed4f23a7a096e94afe1ef62e8c4dd3e.jpg" xmlns="">0Njuv2GZijEu8Lus-Mo5Q_Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

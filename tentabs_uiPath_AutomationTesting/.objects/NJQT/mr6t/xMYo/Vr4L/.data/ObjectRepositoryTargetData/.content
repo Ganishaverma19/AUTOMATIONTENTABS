@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="n823_YuBFUu38-zGLIZksQ" Reference="HoUjq_NeVkSz-nEACedS7Q/Vr4L8_u0HkquB6n84Fcrpw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/cart" CVScreenId="eef79f84-10a4-4cef-82ab-f5e29ad028f9" DesignTimeRectangle="82, 384, 1755, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Shopping cart ' innertext='Shopping cart ' /&gt;" Guid="f7089f24-9b32-4605-a1ff-30640b55a077" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Shopping Cart' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="95a6ebeec0e9a37cfc9f7f2ecd38c9b1.jpg" xmlns="">0M70_5qVfNEi2kEHfn7XG3Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

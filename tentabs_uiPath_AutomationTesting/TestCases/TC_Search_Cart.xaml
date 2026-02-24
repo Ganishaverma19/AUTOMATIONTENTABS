@@ -1,0 +1,1145 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Testcase123456789" this:Testcase123456789.int_reportid="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="str_testid" Type="OutArgument(x:String)" />
+    <x:Property Name="str_suiteid" Type="OutArgument(x:String)" />
+    <x:Property Name="int_reportid" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>atuipath_utilities.Report</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Jira.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>atuipath_utilities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="675.3333333333333,12756.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="524,12734" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="522,12245.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="Value1" />
+            <Variable x:TypeArguments="sd:DataTable" Name="Dt_Read" />
+            <Variable x:TypeArguments="x:String" Name="Value2" />
+            <Variable x:TypeArguments="x:String" Name="Value3" />
+            <Variable x:TypeArguments="x:String" Name="Value4" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence sap:VirtualizedContainerService.HintSize="488,556" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If sap:VirtualizedContainerService.HintSize="452,456" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">int_reportid.Equals(0)==true</CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,162.66666666666666" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportLocation="C:\Users\Testing\Documents\UiPath\TenTabs_UiPath_Testing\Reports" ReportName="TC_Search_AddCart">
+                    <ra:CreateReport.isCreated>
+                      <OutArgument x:TypeArguments="x:Int32">
+                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">int_reportid</CSharpReference>
+                      </OutArgument>
+                    </ra:CreateReport.isCreated>
+                  </ra:CreateReport>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+          <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="488,122.66666666666667" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="SuiteName">
+            <ra:StartSuite.ReportId>
+              <InArgument x:TypeArguments="x:Int32">
+                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">int_reportid</CSharpValue>
+              </InArgument>
+            </ra:StartSuite.ReportId>
+            <ra:StartSuite.suiteId>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">str_suiteid</CSharpReference>
+              </OutArgument>
+            </ra:StartSuite.suiteId>
+          </ra:StartSuite>
+          <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,122.66666666666667" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Add to cart and Search">
+            <ra:StartTest.ReportId>
+              <InArgument x:TypeArguments="x:Int32">
+                <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">int_reportid</CSharpValue>
+              </InArgument>
+            </ra:StartTest.ReportId>
+            <ra:StartTest.SuiteId>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">str_suiteid</CSharpValue>
+              </InArgument>
+            </ra:StartTest.SuiteId>
+            <ra:StartTest.testId>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">str_testid</CSharpReference>
+              </OutArgument>
+            </ra:StartTest.testId>
+          </ra:StartTest>
+          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="488,233.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Search">
+            <ui:ReadRange.DataTable>
+              <OutArgument x:TypeArguments="sd:DataTable">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">Dt_Read</CSharpReference>
+              </OutArgument>
+            </ui:ReadRange.DataTable>
+            <ui:ReadRange.WorkbookPathResource>
+              <InArgument x:TypeArguments="upr:IResource">
+                <CSharpValue x:TypeArguments="upr:IResource" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">LocalResource.FromPath(System.IO.Path.Combine(Environment.CurrentDirectory, "Test Data", "Datapp.xlsx"))</CSharpValue>
+              </InArgument>
+            </ui:ReadRange.WorkbookPathResource>
+          </ui:ReadRange>
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="488,245.33333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+            <ui:MultipleAssign.AssignOperations>
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">Value1</CSharpReference>
+                    </OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">Dt_Read.Rows[0]["Searching"].ToString()</CSharpValue>
+                    </InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">Value2</CSharpReference>
+                    </OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">Dt_Read.Rows[1]["Searching"].ToString()</CSharpValue>
+                    </InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Value3</CSharpReference>
+                    </OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">Dt_Read.Rows[2]["Searching"].ToString()</CSharpValue>
+                    </InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">Value4</CSharpReference>
+                    </OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">Dt_Read.Rows[3]["Searching"].ToString()</CSharpValue>
+                    </InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+              </scg:List>
+            </ui:MultipleAssign.AssignOperations>
+          </ui:MultipleAssign>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+            <ui:LogMessage.Message>
+              <InArgument x:TypeArguments="x:Object">
+                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">"Successfully read excel data"</CSharpValue>
+              </InArgument>
+            </ui:LogMessage.Message>
+          </ui:LogMessage>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Best Medical Supplies Online  Medical" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,10720.666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V2">
+            <uix:NApplicationCard.AutoGenerationOptions>
+              <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+                <uix:GenerationOptions.ExpectedOutputs>
+                  <scg:List x:TypeArguments="x:String" Capacity="4">
+                    <x:Null />
+                  </scg:List>
+                </uix:GenerationOptions.ExpectedOutputs>
+              </uix:GenerationOptions>
+            </uix:NApplicationCard.AutoGenerationOptions>
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,10526" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="452,61.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in" CVScreenId="0cbdd94b-8471-4262-96b8-7ca27d2921c5" CvElementArea="1661, 250, 43, 42" CvType="Icon" DesignTimeRectangle="1667, 255, 33, 33" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' parentid='shopify-section-header-inline' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='svg' class='t4s-icon t4s-icon--search' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="9db2f760-85c1-4675-b284-34a4a301c4a8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAN3SURBVFhH7ZhpSFRRFICFiH60Eq1UBEH9aKXIaCOstE0ySrJITSs3TM3SLNQgpVBxKW1TqSyVklTCLS0l10xzLXfUJjRFLStxDZpOnDvO8N6d92benYHRH33w/txz33nfm3ffPeeNEUxCjOiBycB/KakwSXV/+wnpBVXw6GU+BMelQVh8JsRnFEFeWR0MDo/S03VGklR9Wyec9r8PUzad0nic8ImEgspG+nRmtEpdCotXXXThHmc44BoEvlFJkJpXDgmZxeAdkQgmDoEwZ+dZ1Ty/O0l0GiZEpWRdfbDx5FVykSVmrpCcW0ZPUSP0aQbM2GZPzjniGQYjY7/pKZIQlML1sfqoF0zdbA0eIU+Y1ktX3w+w9IogYja+d+mwJASlzN1DSNKgx2l0SDJ21xRrMCQunQ5pRU0qJbecJDO29gO5/C8dlszA0Ags238ephnbkqXAgprUuuM+MH2rHbR19tAhZt5+qCc36B4cR4c0wpPKr2jQay0IsX78JvsHBumQKDypgOgUInUr8RV3WC/OXY8hOTMKq+iQKDwpK5/bJEFJTTN3WC+ik/NITqwAUuFJrTnmTbYBXfcXIaoaPxMpW797dEgUntQqi4swd5cDd0hvevp/ESksQVLhSZm53CQJOnq+c4f14nXpR5LTKzyBDonCk3K58ZB5UWoD1xLmjHyWTYdE4UllFlWTBIGxqdxhvVC+PO1fe+mQKDypP3I5zDNxhBXmHjA0MsYN6QRuwLhHbbHxp0MaUdvRsQDjnTkExNAhJrBEYalifXSImlRv/wAsNnUhybJLaumwZLCYY461lpdheJRti1GTQnDzxIQLdjtBzjt2sQfJueR87K1avnTTYa0ISiFZxYpFjwe+lVJ6KtyTDrkp2h6lFNZTVkSlkIr6dvJr4QVmbrcHiwuhEPU8B5pkXao51U0y0jOZOiv2ODywCIcnZKnOK65mK1sapRCs7rhFLNqrWGfKY+VhT9Kzc8ewf8JHpwQfPY7P2nGGqZ5qleLy4s170lFusLoCs8c/FJYfdAPHwFjSOwmB4/gYcX7Zp1Y6LAiTlK7gZ5dSrLxOu5hBpJDS2haVGK5DTRhMCkExlMJORJOYQaUQfKOVYnWtHXSYYHApRCk238RJUGxCpJDKhnbyqY8NAN2/TZgUUtMsg6X7XKGQ+lNkQqXEmJRS/wC1EuidQa85MAAAAABJRU5ErkJggg==" InformativeScreenshot="540f22691bda0a06088d02d72bb36b16.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="0cbdd94b-8471-4262-96b8-7ca27d2921c5" CvElementArea="1780, 244, 51, 46" CvType="Icon" DesignTimeRectangle="1784, 255, 33, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;0 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='shopify-section-header-inline' tag='A' type='' class='t4s-pr' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='0' /&gt;" Guid="adb43eb3-0b40-4355-b5ad-11bb466a6d81" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASmSURBVFhH7ZdtTFtVGMcL3aYz0S9KCMQYZ9TEwTaCsIyIuigZugXjy2a2dZgtvgASoFiED8uWaArGZm6RGBfNXLItKpuSOCeDOQqODJAIdAzXdMBKa7pRWuldKdBQCn/znO2yu3tvy+2LiR/8JU/gnnN7nh/POX3uRYU4Mz8/j7m5Ofj9fmRkZEClUkUe4kVjYWFhgUnNzs6iqqpKmoyPggMwjnJ3PugbQ1f95n9Hiq+Sw+GAWq2WyrB4G01jADgzGutKsbNMj8ZBEuRgrIyzlLBKBoNBRuZ2VBrBwY+ufTKipgPxlwoGg+ws5efnS2VuxwunrICvC3rRuK6NA9xGlMZbirZuZmYGKSkpEpm7knNG6ETjq45bAZhxRImUyTKKL0/9Cq3hGLaUfYo9+w/jk6OnceZCH+aCwcX7aOsCgQCmpqbCnKfQUqqj5qWlKGH1oW+x7GkN1Jk7ZSNbsxej113sfl7qytAoEhISJDJLSbFtDSc19jeHDYX7WOLHCyrwRcM5dF66Ct+0H2arA981d2Jr1SE2/8Aze/BT+x9M6mRzJ+7fsAuq5SslMnclj/RM0dl48T09S1isP8JEQtHQ0oWHNr7LqvnOR19hWeYOPPjsbqzNXC+RWQz+2/fxKsH4rW+fv1t/61qcqP77FiZUYTgmnpLlqu0GUvKKoc7cgdS8Yly2WFFbWyuVEQnAb4Wxfq+yPvXwpvfx5CuV8M8GxFMhuXLNgfySOvw5Ysf09DSGhobCHnZJR+esMBpCdHT6q6lKB080CYcVIexTHMehvLxcKqM0hAt/3WhkUt0DQ8JhRQg7us/nw/j4ONLT06UJlYRw4d37DzOpwNyd/hMJ/LOPGqjH40FbWxuSk5OlSZcK4aK6z04wKWoJ0SCultvtRmtrK9LS0qSJw4Vw0eNnOphUS+cl4XBECN+nvF4v20abzYaioiIkJiZKBeRCuODg8F9M6vUPDgqHI4KvFnV32kZezG63o6enBzU1NcjNzUVSUtJi5ydZus7JyYFWq5W2hE0ldUys+WL01ZITo62k9yyr1QqLxYLPv2lA4lOb8dx2Lfr7+1mYTCYMDAxIpdzcJOtVj75cBpfHK55WjFCMtpLOGB1+qtplswWpG99C6vOF6B8YxPDwMIuRkREmLZEiLvSace/6Qqx7swYTXp94WjG8GJ0xOvxUNft1J1a/WoH7srajqb2bSTqdThb0u8vlkpcizl404Z7sQqzZVg2Pd0o8rRhejBqra+Im0t/QYWW2Bs0dvew1hyo4OTnJgn6nsZBSxM+/9WFF1i6s3VbNtjUW6Cis2fohVmRp8EtHH6sebS0FVZGCvw4rRZAYVWz1a7qoxZwTN9nnaZ3T7b2senwF5WJJKUIoRgkige5/okDLPk/rKEGRFMGLUQLHuEc8LQvdF6kQoViK4MUe21K+pJjthpvdF6kQEZEUwR9+SkiJ5aDxR14qjUqIiFiK+PF8DxOjxGKxa47xmISIqKQIoRiJEPQzNa+EjUcrREQtRZw8143lWRr2WCIJelenaxKOhZikCF6MHuLxECJiliLoXy16Vv5w/nfxVFTERSre/C+llP+k1D/eUrsx3BWtgwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in" CVScreenId="7a5722c2-a137-4c47-baaa-8ba04697fb7d" CvElementArea="1661, 250, 43, 42" CvType="Icon" DesignTimeRectangle="1667, 255, 33, 33" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' parentid='shopify-section-header-inline' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='svg' class='t4s-icon t4s-icon--search' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="f8471d8d-1f80-4211-95e4-b4ac6aa9ee41" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAN3SURBVFhH7ZhpSFRRFICFiH60Eq1UBEH9aKXIaCOstE0ySrJITSs3TM3SLNQgpVBxKW1TqSyVklTCLS0l10xzLXfUJjRFLStxDZpOnDvO8N6d92benYHRH33w/txz33nfm3ffPeeNEUxCjOiBycB/KakwSXV/+wnpBVXw6GU+BMelQVh8JsRnFEFeWR0MDo/S03VGklR9Wyec9r8PUzad0nic8ImEgspG+nRmtEpdCotXXXThHmc44BoEvlFJkJpXDgmZxeAdkQgmDoEwZ+dZ1Ty/O0l0GiZEpWRdfbDx5FVykSVmrpCcW0ZPUSP0aQbM2GZPzjniGQYjY7/pKZIQlML1sfqoF0zdbA0eIU+Y1ktX3w+w9IogYja+d+mwJASlzN1DSNKgx2l0SDJ21xRrMCQunQ5pRU0qJbecJDO29gO5/C8dlszA0Ags238ephnbkqXAgprUuuM+MH2rHbR19tAhZt5+qCc36B4cR4c0wpPKr2jQay0IsX78JvsHBumQKDypgOgUInUr8RV3WC/OXY8hOTMKq+iQKDwpK5/bJEFJTTN3WC+ik/NITqwAUuFJrTnmTbYBXfcXIaoaPxMpW797dEgUntQqi4swd5cDd0hvevp/ESksQVLhSZm53CQJOnq+c4f14nXpR5LTKzyBDonCk3K58ZB5UWoD1xLmjHyWTYdE4UllFlWTBIGxqdxhvVC+PO1fe+mQKDypP3I5zDNxhBXmHjA0MsYN6QRuwLhHbbHxp0MaUdvRsQDjnTkExNAhJrBEYalifXSImlRv/wAsNnUhybJLaumwZLCYY461lpdheJRti1GTQnDzxIQLdjtBzjt2sQfJueR87K1avnTTYa0ISiFZxYpFjwe+lVJ6KtyTDrkp2h6lFNZTVkSlkIr6dvJr4QVmbrcHiwuhEPU8B5pkXao51U0y0jOZOiv2ODywCIcnZKnOK65mK1sapRCs7rhFLNqrWGfKY+VhT9Kzc8ewf8JHpwQfPY7P2nGGqZ5qleLy4s170lFusLoCs8c/FJYfdAPHwFjSOwmB4/gYcX7Zp1Y6LAiTlK7gZ5dSrLxOu5hBpJDS2haVGK5DTRhMCkExlMJORJOYQaUQfKOVYnWtHXSYYHApRCk238RJUGxCpJDKhnbyqY8NAN2/TZgUUtMsg6X7XKGQ+lNkQqXEmJRS/wC1EuidQa85MAAAAABJRU5ErkJggg==" InformativeScreenshot="540f22691bda0a06088d02d72bb36b16.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="7a5722c2-a137-4c47-baaa-8ba04697fb7d" CvElementArea="1780, 244, 51, 46" CvType="Icon" DesignTimeRectangle="1784, 255, 33, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;0 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='shopify-section-header-inline' tag='A' type='' class='t4s-pr' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='0' /&gt;" Guid="366ab249-9e7f-4921-b3a6-8870c4272e4e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASmSURBVFhH7ZdtTFtVGMcL3aYz0S9KCMQYZ9TEwTaCsIyIuigZugXjy2a2dZgtvgASoFiED8uWaArGZm6RGBfNXLItKpuSOCeDOQqODJAIdAzXdMBKa7pRWuldKdBQCn/znO2yu3tvy+2LiR/8JU/gnnN7nh/POX3uRYU4Mz8/j7m5Ofj9fmRkZEClUkUe4kVjYWFhgUnNzs6iqqpKmoyPggMwjnJ3PugbQ1f95n9Hiq+Sw+GAWq2WyrB4G01jADgzGutKsbNMj8ZBEuRgrIyzlLBKBoNBRuZ2VBrBwY+ufTKipgPxlwoGg+ws5efnS2VuxwunrICvC3rRuK6NA9xGlMZbirZuZmYGKSkpEpm7knNG6ETjq45bAZhxRImUyTKKL0/9Cq3hGLaUfYo9+w/jk6OnceZCH+aCwcX7aOsCgQCmpqbCnKfQUqqj5qWlKGH1oW+x7GkN1Jk7ZSNbsxej113sfl7qytAoEhISJDJLSbFtDSc19jeHDYX7WOLHCyrwRcM5dF66Ct+0H2arA981d2Jr1SE2/8Aze/BT+x9M6mRzJ+7fsAuq5SslMnclj/RM0dl48T09S1isP8JEQtHQ0oWHNr7LqvnOR19hWeYOPPjsbqzNXC+RWQz+2/fxKsH4rW+fv1t/61qcqP77FiZUYTgmnpLlqu0GUvKKoc7cgdS8Yly2WFFbWyuVEQnAb4Wxfq+yPvXwpvfx5CuV8M8GxFMhuXLNgfySOvw5Ysf09DSGhobCHnZJR+esMBpCdHT6q6lKB080CYcVIexTHMehvLxcKqM0hAt/3WhkUt0DQ8JhRQg7us/nw/j4ONLT06UJlYRw4d37DzOpwNyd/hMJ/LOPGqjH40FbWxuSk5OlSZcK4aK6z04wKWoJ0SCultvtRmtrK9LS0qSJw4Vw0eNnOphUS+cl4XBECN+nvF4v20abzYaioiIkJiZKBeRCuODg8F9M6vUPDgqHI4KvFnV32kZezG63o6enBzU1NcjNzUVSUtJi5ydZus7JyYFWq5W2hE0ldUys+WL01ZITo62k9yyr1QqLxYLPv2lA4lOb8dx2Lfr7+1mYTCYMDAxIpdzcJOtVj75cBpfHK55WjFCMtpLOGB1+qtplswWpG99C6vOF6B8YxPDwMIuRkREmLZEiLvSace/6Qqx7swYTXp94WjG8GJ0xOvxUNft1J1a/WoH7srajqb2bSTqdThb0u8vlkpcizl404Z7sQqzZVg2Pd0o8rRhejBqra+Im0t/QYWW2Bs0dvew1hyo4OTnJgn6nsZBSxM+/9WFF1i6s3VbNtjUW6Cis2fohVmRp8EtHH6sebS0FVZGCvw4rRZAYVWz1a7qoxZwTN9nnaZ3T7b2senwF5WJJKUIoRgkige5/okDLPk/rKEGRFMGLUQLHuEc8LQvdF6kQoViK4MUe21K+pJjthpvdF6kQEZEUwR9+SkiJ5aDxR14qjUqIiFiK+PF8DxOjxGKxa47xmISIqKQIoRiJEPQzNa+EjUcrREQtRZw8143lWRr2WCIJelenaxKOhZikCF6MHuLxECJiliLoXy16Vv5w/nfxVFTERSre/C+llP+k1D/eUrsx3BWtgwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in" CVScreenId="b5e4a1b6-b04e-41e2-8237-d35f2e2e0cd4" CvElementArea="1447, 443, 457, 64" CvType="InputBox" DesignTimeRectangle="1451, 445, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="bea9d57f-5f35-42a6-8900-1b19064b923a" InformativeScreenshot="f95d78338e9e265b2fb52e28fd1d001f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="b5e4a1b6-b04e-41e2-8237-d35f2e2e0cd4" CvElementArea="1447, 352, 456, 65" CvType="InputBox" DesignTimeRectangle="1451, 355, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="75ae2e7b-db4f-49cf-9ab7-39db6b3a7cbb" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" IsLoose="True" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in" CVScreenId="4c63b20a-ef46-4e9b-98b0-afc2b125cf9d" ContentHash="u2repX2FY06iFQFzPXyipQ" CvElementArea="1053, 297, 304, 42" CvType="InputBox" DesignTimeRectangle="1451, 367, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="236a08d9-4bf9-491c-b3a8-eba594c8b69b" InformativeScreenshot="f95d78338e9e265b2fb52e28fd1d001f.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/7udrCz0JvU6qvJMXMwm5KQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="95ffa6e0-33e7-4da7-ae74-431155a6ca2b" CvElementArea="1052, 185, 303, 43" CvType="InputBox" DesignTimeRectangle="1451, 277, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="e1199213-d1bf-497b-8cfd-542fb117c386" SearchSteps="Selector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT(5)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,304.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in" CVScreenId="ad5f6621-002d-4fae-8e20-2c61b4d29907" ContentHash="2PzzqUII3UmtUmkZb3dXVQ" CvElementArea="1051, 244, 305, 43" CvType="InputBox" DesignTimeRectangle="1451, 445, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="a878ba6a-3e11-4cad-a3b7-87e45f5000d3" InformativeScreenshot="f95d78338e9e265b2fb52e28fd1d001f.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/rBvTBGRAXkSEMxHf74IPPQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="3ea4d714-202a-4b83-815a-2b476c0bd092" CvElementArea="1447, 352, 455, 65" CvType="InputBox" DesignTimeRectangle="1451, 355, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="47ee7a95-9de8-473e-8db5-975435e89e28" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">Value1</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">Value1</CSharpValue>
+                          </InArgument>
+                        </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'path'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in" CVScreenId="ee884125-ff5f-44c3-9568-8d01695c5ffd" ContentHash="2NAL85l-T0SGoX_Ejge8dg" CvElementArea="1052, 244, 305, 42" CvType="InputBox" DesignTimeRectangle="1852, 385, 23, 24" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;svg&amp;gt;path' tag='path' /&gt;" Guid="b61fae15-3b21-48f3-b393-ac1f68624695" InformativeScreenshot="14f3055a82baf5751db665ff81acf049.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/apAQE4UL_Uy9fmZ8CiPkcg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" IsLoose="True" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in" CVScreenId="9e9f2c7e-bc70-42d7-8b04-8966bdd326ae" ContentHash="SqfUUmzE8kqkjlh2Hjuwfw" DesignTimeRectangle="1852, 384, 24, 26" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;svg' idx='2' tag='svg' /&gt;" Guid="b1604493-fe9b-45d1-a5aa-692c85264941" InformativeScreenshot="eb69041fba1deea9be52a91b4e2922e1.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/Y8UxZmwZJ0qTRNOqDmXwoA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll 'A'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,232.66666666666666" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="3" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BPL Veterinary Syringe …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/search" CVScreenId="ffd3b86d-a3b8-4e65-895b-c88e374acf16" CvTextArea="530, 735, 398, 26" CvTextArgument="BPL Patient Monitor Veterinary Magn..." CvType="Text" DesignTimeRectangle="531, 737, 397, 25" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="aac7e557-671b-4d97-9a78-40edca2b6416" InformativeScreenshot="d2e2e37dba7bbd73812b69f4f2d0514d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search: 74 results found for &amp;quot;Veterinary Medical Devcies&amp;quot;' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="ffd3b86d-a3b8-4e65-895b-c88e374acf16" CvTextArea="656, 765, 121, 19" CvTextArgument="Rs. 58,550.00" CvType="Text" DesignTimeRectangle="658, 762, 119, 25" FuzzySelectorArgument="&lt;webctrl type='' tag='INS' class='' aaname='Rs. 58,550.00' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Rs. 58,550.00' /&gt;" Guid="6a39548a-ea6c-46e4-84ba-094f71730361" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/search" CVScreenId="43f44c78-5947-4bfc-9081-2235ba9b3d26" ContentHash="RtO_M24ce024SGl9YU2ntA" CvTextArea="397, 492, 266, 17" CvTextArgument="BPL Patient Monitor Veterinary Magn..." CvType="Text" DesignTimeRectangle="531, 737, 397, 25" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="7cd01c87-96d9-4f71-877f-5547b7bfdf28" InformativeScreenshot="bed36dd84abc0e381628682e7091224e.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/DkAzSPIoDEqazoMCoSxtnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search: 8 results found for &amp;quot;Veterinary Medical Devices&amp;quot;' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="ffd3b86d-a3b8-4e65-895b-c88e374acf16" CvTextArea="665, 791, 113, 19" CvTextArgument="No reviews" CvType="Text" DesignTimeRectangle="667, 787, 112, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='jdgm-prev-badge__text' type='' tag='SPAN' aaname='No reviews' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='No reviews' /&gt;" Guid="802a15f5-98bb-4e49-a952-139fe59af871" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="934eb607-3143-48ee-a195-c9eab2b3c10c" CvElementArea="1171, 838, 266, 66" CvTextArea="1253, 861, 142, 19" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1177, 841, 257, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top t4s-btn-loading__svg' aaname='Add to cart                                                            ' check:innerText='ADD TO CART' /&gt;" Guid="d3412fc1-4606-42f2-8e48-8930ce1ce681" InformativeScreenshot="72a977bc409fe54382b8d11eb0df2f8a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="934eb607-3143-48ee-a195-c9eab2b3c10c" CvElementArea="1171, 838, 266, 66" CvTextArea="1253, 861, 142, 19" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1255, 861, 140, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentname='add' tag='SPAN' type='' class='t4s-btn-atc_text' aaname='Add to cart' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="3e7595c0-d189-4754-8722-72ffed638907" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" IsLoose="True" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="30f37f45-3171-49b6-9327-6c8724fd809e" CvElementArea="1171, 838, 266, 66" CvTextArea="1253, 861, 142, 19" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1177, 841, 257, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top t4s-btn-loading__svg' aaname='Add to cart                                                            ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="0435ff54-f22e-4a21-a868-68d017735ea8" InformativeScreenshot="5d888c1f929e2e08714c600cd607fdda.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="30f37f45-3171-49b6-9327-6c8724fd809e" CvElementArea="1171, 838, 266, 66" CvTextArea="1253, 861, 142, 19" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1255, 861, 140, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentname='add' tag='SPAN' type='' class='t4s-btn-atc_text' aaname='Add to cart' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="20236b2c-1630-4ae8-8dad-31f18dfb2a2d" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'BPL Patient Monitor Vet…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,966" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,326" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,262" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="c8afd3c8-6a62-4629-ad84-9002eec0fa2f" ContentHash="KhRCxOlsaESBHLbU98dBmw" CvElementArea="1336, 162, 25, 25" CvType="CloseButton" DesignTimeRectangle="1856, 145, 75, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Close Cart' tag='BUTTON' /&gt;" Guid="48c22d59-46fd-4384-96e3-d779aa11db83" InformativeScreenshot="47941650907c84362f4d4279e470db14.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/OyCbaWnBAEeVMXk8viA4eQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="73723aa2-42c8-497f-a290-defc3472603f" CvTextArea="1449, 170, 193, 22" CvTextArgument="SHOPPING CART" CvType="Text" DesignTimeRectangle="1451, 162, 405, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Shopping cart' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='SHOPPING CART' /&gt;" Guid="f862864a-921d-4cae-909d-9a5003969e95" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="Verification target" IsLoose="True" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Target>
+                                <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="c8afd3c8-6a62-4629-ad84-9002eec0fa2f" ContentHash="KhRCxOlsaESBHLbU98dBmw" CvElementArea="1336, 162, 25, 25" CvType="CloseButton" DesignTimeRectangle="1856, 145, 75, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Close Cart' tag='BUTTON' /&gt;" Guid="48c22d59-46fd-4384-96e3-d779aa11db83" InformativeScreenshot="47941650907c84362f4d4279e470db14.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/OyCbaWnBAEeVMXk8viA4eQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="59bab863-7d18-4749-8ea6-4a04624be1d5" CvTextArea="1449, 170, 193, 22" CvTextArgument="SHOPPING CART" CvType="Text" DesignTimeRectangle="1451, 162, 405, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Shopping cart' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='SHOPPING CART' /&gt;" Guid="41477989-80b2-46e4-b141-78e299679633" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:VerifyExecutionOptions.Target>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,287.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NMouseScroll KeyModifiers="{x:Null}" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,223.33333333333334" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="3" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                          <uix:NMouseScroll.Direction>
+                            <InArgument x:TypeArguments="uix:NScrollDirection">
+                              <CSharpValue x:TypeArguments="uix:NScrollDirection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">UiPath.UIAutomationNext.Enums.NScrollDirection.Up</CSharpValue>
+                            </InArgument>
+                          </uix:NMouseScroll.Direction>
+                        </uix:NMouseScroll>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" ContentHash="_i9PEbTY2EigDX1qe5S22w" DesignTimeRectangle="1421, 225, 503, 307" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="6155188e-23ee-4c70-b216-3184bdb17df3" InformativeScreenshot="5177b169867adc846b8f28cd81e2d982.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/hqO77h8MfUGTINlnk81nlA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="4b5a29db-1b0e-4356-87c1-512cd6bff6b7" CvElementArea="1661, 172, 43, 41" CvType="Icon" DesignTimeRectangle="1667, 177, 33, 33" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' parentid='shopify-section-header-inline' tag='svg' class='t4s-icon t4s-icon--search' /&gt;" Guid="0dc2e4c3-2d2a-434f-bc65-213da9ec82b9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAN3SURBVFhH7ZhpSFRRFICFiH60Eq1UBEH9aKXIaCOstE0ySrJITSs3TM3SLNQgpVBxKW1TqSyVklTCLS0l10xzLXfUJjRFLStxDZpOnDvO8N6d92benYHRH33w/txz33nfm3ffPeeNEUxCjOiBycB/KakwSXV/+wnpBVXw6GU+BMelQVh8JsRnFEFeWR0MDo/S03VGklR9Wyec9r8PUzad0nic8ImEgspG+nRmtEpdCotXXXThHmc44BoEvlFJkJpXDgmZxeAdkQgmDoEwZ+dZ1Ty/O0l0GiZEpWRdfbDx5FVykSVmrpCcW0ZPUSP0aQbM2GZPzjniGQYjY7/pKZIQlML1sfqoF0zdbA0eIU+Y1ktX3w+w9IogYja+d+mwJASlzN1DSNKgx2l0SDJ21xRrMCQunQ5pRU0qJbecJDO29gO5/C8dlszA0Ags238ephnbkqXAgprUuuM+MH2rHbR19tAhZt5+qCc36B4cR4c0wpPKr2jQay0IsX78JvsHBumQKDypgOgUInUr8RV3WC/OXY8hOTMKq+iQKDwpK5/bJEFJTTN3WC+ik/NITqwAUuFJrTnmTbYBXfcXIaoaPxMpW797dEgUntQqi4swd5cDd0hvevp/ESksQVLhSZm53CQJOnq+c4f14nXpR5LTKzyBDonCk3K58ZB5UWoD1xLmjHyWTYdE4UllFlWTBIGxqdxhvVC+PO1fe+mQKDypP3I5zDNxhBXmHjA0MsYN6QRuwLhHbbHxp0MaUdvRsQDjnTkExNAhJrBEYalifXSImlRv/wAsNnUhybJLaumwZLCYY461lpdheJRti1GTQnDzxIQLdjtBzjt2sQfJueR87K1avnTTYa0ISiFZxYpFjwe+lVJ6KtyTDrkp2h6lFNZTVkSlkIr6dvJr4QVmbrcHiwuhEPU8B5pkXao51U0y0jOZOiv2ODywCIcnZKnOK65mK1sapRCs7rhFLNqrWGfKY+VhT9Kzc8ewf8JHpwQfPY7P2nGGqZ5qleLy4s170lFusLoCs8c/FJYfdAPHwFjSOwmB4/gYcX7Zp1Y6LAiTlK7gZ5dSrLxOu5hBpJDS2haVGK5DTRhMCkExlMJORJOYQaUQfKOVYnWtHXSYYHApRCk238RJUGxCpJDKhnbyqY8NAN2/TZgUUtMsg6X7XKGQ+lNkQqXEmJRS/wC1EuidQa85MAAAAABJRU5ErkJggg==" InformativeScreenshot="31df270207f401ce96ec72b2631c109d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="4b5a29db-1b0e-4356-87c1-512cd6bff6b7" CvElementArea="1780, 166, 52, 46" CvType="Icon" DesignTimeRectangle="1784, 177, 33, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;0 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='shopify-section-header-inline' tag='A' type='' class='t4s-pr' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='0' /&gt;" Guid="098f710e-e1ad-4438-97ec-0e90f9a25326" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASmSURBVFhH7ZdtTFtVGMcL3aYz0S9KCMQYZ9TEwTaCsIyIuigZugXjy2a2dZgtvgASoFiED8uWaArGZm6RGBfNXLItKpuSOCeDOQqODJAIdAzXdMBKa7pRWuldKdBQCn/znO2yu3tvy+2LiR/8JU/gnnN7nh/POX3uRYU4Mz8/j7m5Ofj9fmRkZEClUkUe4kVjYWFhgUnNzs6iqqpKmoyPggMwjnJ3PugbQ1f95n9Hiq+Sw+GAWq2WyrB4G01jADgzGutKsbNMj8ZBEuRgrIyzlLBKBoNBRuZ2VBrBwY+ufTKipgPxlwoGg+ws5efnS2VuxwunrICvC3rRuK6NA9xGlMZbirZuZmYGKSkpEpm7knNG6ETjq45bAZhxRImUyTKKL0/9Cq3hGLaUfYo9+w/jk6OnceZCH+aCwcX7aOsCgQCmpqbCnKfQUqqj5qWlKGH1oW+x7GkN1Jk7ZSNbsxej113sfl7qytAoEhISJDJLSbFtDSc19jeHDYX7WOLHCyrwRcM5dF66Ct+0H2arA981d2Jr1SE2/8Aze/BT+x9M6mRzJ+7fsAuq5SslMnclj/RM0dl48T09S1isP8JEQtHQ0oWHNr7LqvnOR19hWeYOPPjsbqzNXC+RWQz+2/fxKsH4rW+fv1t/61qcqP77FiZUYTgmnpLlqu0GUvKKoc7cgdS8Yly2WFFbWyuVEQnAb4Wxfq+yPvXwpvfx5CuV8M8GxFMhuXLNgfySOvw5Ysf09DSGhobCHnZJR+esMBpCdHT6q6lKB080CYcVIexTHMehvLxcKqM0hAt/3WhkUt0DQ8JhRQg7us/nw/j4ONLT06UJlYRw4d37DzOpwNyd/hMJ/LOPGqjH40FbWxuSk5OlSZcK4aK6z04wKWoJ0SCultvtRmtrK9LS0qSJw4Vw0eNnOphUS+cl4XBECN+nvF4v20abzYaioiIkJiZKBeRCuODg8F9M6vUPDgqHI4KvFnV32kZezG63o6enBzU1NcjNzUVSUtJi5ydZus7JyYFWq5W2hE0ldUys+WL01ZITo62k9yyr1QqLxYLPv2lA4lOb8dx2Lfr7+1mYTCYMDAxIpdzcJOtVj75cBpfHK55WjFCMtpLOGB1+qtplswWpG99C6vOF6B8YxPDwMIuRkREmLZEiLvSace/6Qqx7swYTXp94WjG8GJ0xOvxUNft1J1a/WoH7srajqb2bSTqdThb0u8vlkpcizl404Z7sQqzZVg2Pd0o8rRhejBqra+Im0t/QYWW2Bs0dvew1hyo4OTnJgn6nsZBSxM+/9WFF1i6s3VbNtjUW6Cis2fohVmRp8EtHH6sebS0FVZGCvw4rRZAYVWz1a7qoxZwTN9nnaZ3T7b2senwF5WJJKUIoRgkige5/okDLPk/rKEGRFMGLUQLHuEc8LQvdF6kQoViK4MUe21K+pJjthpvdF6kQEZEUwR9+SkiJ5aDxR14qjUqIiFiK+PF8DxOjxGKxa47xmISIqKQIoRiJEPQzNa+EjUcrREQtRZw8143lWRr2WCIJelenaxKOhZikCF6MHuLxECJiliLoXy16Vv5w/nfxVFTERSre/C+llP+k1D/eUrsx3BWtgwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" IsLoose="True" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="4448f57a-fb37-45c7-83b5-8a05fd1cb387" CvElementArea="1661, 172, 43, 41" CvType="Icon" DesignTimeRectangle="1667, 177, 33, 33" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' parentid='shopify-section-header-inline' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='svg' class='t4s-icon t4s-icon--search' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="e08fa1a9-8e51-4020-bedc-a0fd45309fb1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAN3SURBVFhH7ZhpSFRRFICFiH60Eq1UBEH9aKXIaCOstE0ySrJITSs3TM3SLNQgpVBxKW1TqSyVklTCLS0l10xzLXfUJjRFLStxDZpOnDvO8N6d92benYHRH33w/txz33nfm3ffPeeNEUxCjOiBycB/KakwSXV/+wnpBVXw6GU+BMelQVh8JsRnFEFeWR0MDo/S03VGklR9Wyec9r8PUzad0nic8ImEgspG+nRmtEpdCotXXXThHmc44BoEvlFJkJpXDgmZxeAdkQgmDoEwZ+dZ1Ty/O0l0GiZEpWRdfbDx5FVykSVmrpCcW0ZPUSP0aQbM2GZPzjniGQYjY7/pKZIQlML1sfqoF0zdbA0eIU+Y1ktX3w+w9IogYja+d+mwJASlzN1DSNKgx2l0SDJ21xRrMCQunQ5pRU0qJbecJDO29gO5/C8dlszA0Ags238ephnbkqXAgprUuuM+MH2rHbR19tAhZt5+qCc36B4cR4c0wpPKr2jQay0IsX78JvsHBumQKDypgOgUInUr8RV3WC/OXY8hOTMKq+iQKDwpK5/bJEFJTTN3WC+ik/NITqwAUuFJrTnmTbYBXfcXIaoaPxMpW797dEgUntQqi4swd5cDd0hvevp/ESksQVLhSZm53CQJOnq+c4f14nXpR5LTKzyBDonCk3K58ZB5UWoD1xLmjHyWTYdE4UllFlWTBIGxqdxhvVC+PO1fe+mQKDypP3I5zDNxhBXmHjA0MsYN6QRuwLhHbbHxp0MaUdvRsQDjnTkExNAhJrBEYalifXSImlRv/wAsNnUhybJLaumwZLCYY461lpdheJRti1GTQnDzxIQLdjtBzjt2sQfJueR87K1avnTTYa0ISiFZxYpFjwe+lVJ6KtyTDrkp2h6lFNZTVkSlkIr6dvJr4QVmbrcHiwuhEPU8B5pkXao51U0y0jOZOiv2ODywCIcnZKnOK65mK1sapRCs7rhFLNqrWGfKY+VhT9Kzc8ewf8JHpwQfPY7P2nGGqZ5qleLy4s170lFusLoCs8c/FJYfdAPHwFjSOwmB4/gYcX7Zp1Y6LAiTlK7gZ5dSrLxOu5hBpJDS2haVGK5DTRhMCkExlMJORJOYQaUQfKOVYnWtHXSYYHApRCk238RJUGxCpJDKhnbyqY8NAN2/TZgUUtMsg6X7XKGQ+lNkQqXEmJRS/wC1EuidQa85MAAAAABJRU5ErkJggg==" InformativeScreenshot="31df270207f401ce96ec72b2631c109d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="4448f57a-fb37-45c7-83b5-8a05fd1cb387" CvElementArea="1780, 166, 52, 46" CvType="Icon" DesignTimeRectangle="1784, 177, 33, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;0 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='shopify-section-header-inline' tag='A' type='' class='t4s-pr' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='0' /&gt;" Guid="77167660-a001-4e7f-9892-9496bc31d372" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASmSURBVFhH7ZdtTFtVGMcL3aYz0S9KCMQYZ9TEwTaCsIyIuigZugXjy2a2dZgtvgASoFiED8uWaArGZm6RGBfNXLItKpuSOCeDOQqODJAIdAzXdMBKa7pRWuldKdBQCn/znO2yu3tvy+2LiR/8JU/gnnN7nh/POX3uRYU4Mz8/j7m5Ofj9fmRkZEClUkUe4kVjYWFhgUnNzs6iqqpKmoyPggMwjnJ3PugbQ1f95n9Hiq+Sw+GAWq2WyrB4G01jADgzGutKsbNMj8ZBEuRgrIyzlLBKBoNBRuZ2VBrBwY+ufTKipgPxlwoGg+ws5efnS2VuxwunrICvC3rRuK6NA9xGlMZbirZuZmYGKSkpEpm7knNG6ETjq45bAZhxRImUyTKKL0/9Cq3hGLaUfYo9+w/jk6OnceZCH+aCwcX7aOsCgQCmpqbCnKfQUqqj5qWlKGH1oW+x7GkN1Jk7ZSNbsxej113sfl7qytAoEhISJDJLSbFtDSc19jeHDYX7WOLHCyrwRcM5dF66Ct+0H2arA981d2Jr1SE2/8Aze/BT+x9M6mRzJ+7fsAuq5SslMnclj/RM0dl48T09S1isP8JEQtHQ0oWHNr7LqvnOR19hWeYOPPjsbqzNXC+RWQz+2/fxKsH4rW+fv1t/61qcqP77FiZUYTgmnpLlqu0GUvKKoc7cgdS8Yly2WFFbWyuVEQnAb4Wxfq+yPvXwpvfx5CuV8M8GxFMhuXLNgfySOvw5Ysf09DSGhobCHnZJR+esMBpCdHT6q6lKB080CYcVIexTHMehvLxcKqM0hAt/3WhkUt0DQ8JhRQg7us/nw/j4ONLT06UJlYRw4d37DzOpwNyd/hMJ/LOPGqjH40FbWxuSk5OlSZcK4aK6z04wKWoJ0SCultvtRmtrK9LS0qSJw4Vw0eNnOphUS+cl4XBECN+nvF4v20abzYaioiIkJiZKBeRCuODg8F9M6vUPDgqHI4KvFnV32kZezG63o6enBzU1NcjNzUVSUtJi5ydZus7JyYFWq5W2hE0ldUys+WL01ZITo62k9yyr1QqLxYLPv2lA4lOb8dx2Lfr7+1mYTCYMDAxIpdzcJOtVj75cBpfHK55WjFCMtpLOGB1+qtplswWpG99C6vOF6B8YxPDwMIuRkREmLZEiLvSace/6Qqx7swYTXp94WjG8GJ0xOvxUNft1J1a/WoH7srajqb2bSTqdThb0u8vlkpcizl404Z7sQqzZVg2Pd0o8rRhejBqra+Im0t/QYWW2Bs0dvew1hyo4OTnJgn6nsZBSxM+/9WFF1i6s3VbNtjUW6Cis2fohVmRp8EtHH6sebS0FVZGCvw4rRZAYVWz1a7qoxZwTN9nnaZ3T7b2senwF5WJJKUIoRgkige5/okDLPk/rKEGRFMGLUQLHuEc8LQvdF6kQoViK4MUe21K+pJjthpvdF6kQEZEUwR9+SkiJ5aDxR14qjUqIiFiK+PF8DxOjxGKxa47xmISIqKQIoRiJEPQzNa+EjUcrREQtRZw8143lWRr2WCIJelenaxKOhZikCF6MHuLxECJiliLoXy16Vv5w/nfxVFTERSre/C+llP+k1D/eUrsx3BWtgwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="bff9c34b-9ea9-46c5-89e9-62c14a02b3f0" CvElementArea="1447, 443, 457, 64" CvType="InputBox" DesignTimeRectangle="1451, 445, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="818c89fe-3206-4d72-9d61-0232511a8962" InformativeScreenshot="d09e13aa59829c73b1395fd6cc9f0534.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="bff9c34b-9ea9-46c5-89e9-62c14a02b3f0" CvElementArea="1447, 352, 456, 65" CvType="InputBox" DesignTimeRectangle="1451, 355, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="7f4ee232-54e7-4450-a383-9d5ad0632577" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="9acd27a0-01eb-4e8f-b464-89c24d2bf356" ContentHash="ZH9tVw6_LkmrC7GDJzew6g" CvElementArea="1052, 296, 305, 43" CvType="InputBox" DesignTimeRectangle="1451, 445, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="9018ad56-f6f7-4d9b-892e-3c470fac61d1" InformativeScreenshot="d09e13aa59829c73b1395fd6cc9f0534.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/6M8S12nI2kSId380sZrNGQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="7e6a3f80-6c07-4700-af41-26b95a30f63e" CvElementArea="1053, 185, 302, 42" CvType="InputBox" DesignTimeRectangle="1451, 355, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="bc14c9b9-0f65-4e96-bc57-e79f7bab8924" SearchSteps="Selector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Verification target(2)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,304.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="9e589224-b81c-4c1c-8578-5fb647712ffd" CvElementArea="1448, 443, 456, 63" CvType="InputBox" DesignTimeRectangle="1451, 445, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="6e90b392-40d3-46e7-8d17-3616bc3fb553" InformativeScreenshot="d09e13aa59829c73b1395fd6cc9f0534.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="9e589224-b81c-4c1c-8578-5fb647712ffd" CvElementArea="1447, 352, 456, 65" CvType="InputBox" DesignTimeRectangle="1451, 355, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="150caaed-0630-4caa-8b65-94b914556963" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">Value2</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">Value2</CSharpValue>
+                          </InArgument>
+                        </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'svg'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="e21f1217-35e2-465f-81d0-8c3f90ca9bde" CvElementArea="1448, 443, 456, 64" CvType="InputBox" DesignTimeRectangle="1852, 462, 24, 26" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;svg' idx='2' tag='svg' /&gt;" Guid="1e7acd04-5313-439a-ae7a-7ba1707f0221" InformativeScreenshot="eb69041fba1deea9be52a91b4e2922e1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" IsLoose="True" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/bpl-veterinary-magna-3-parameter-patient-monitor" CVScreenId="40a2eb96-5489-4bc0-9b96-998f56073f71" ContentHash="LXMwHFQlDEGeinHvdNpZSw" CvElementArea="1052, 296, 305, 43" CvType="InputBox" DesignTimeRectangle="1852, 463, 23, 24" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;svg&amp;gt;path' isleaf='1' tag='path' /&gt;" Guid="1ca1ebe5-a349-4c2c-a53b-18d0cf469253" InformativeScreenshot="feb605cd80b3273ded0066e5a98d0daf.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/qUwmOZ2y2EaSulqsfFOztA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy BPL Veterinary Magna 3 Parameter Patient Monitor Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset X="-1" Y="-3" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,232.66666666666666" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="4" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Analog Morcellator With…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/search" CVScreenId="d61b0350-e81d-468f-b98a-72c33612e7fa" CvTextArea="1430, 948, 388, 25" CvTextArgument="Analog Morcellator With Accessories" CvType="Text" DesignTimeRectangle="1432, 944, 387, 29" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Analog Morcellator With Accessories' tag='A' /&gt;" Guid="bb9cca20-b387-4aa5-a240-65b4c8e94fa2" InformativeScreenshot="bf2b9b6ad3fd69508c07d58891155b19.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search: 41 results found for &amp;quot;Endiscopy&amp;quot;' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="d61b0350-e81d-468f-b98a-72c33612e7fa" CvTextArea="1557, 977, 112, 21" CvTextArgument="Rs. 78,152.00" CvType="Text" DesignTimeRectangle="1559, 974, 111, 25" FuzzySelectorArgument="&lt;webctrl type='' tag='INS' class='' aaname='Rs. 78,152.00' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Rs. 78,152.00' /&gt;" Guid="36917438-8fb7-477b-9c73-2b4d4be51e9d" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/search" CVScreenId="d61b0350-e81d-468f-b98a-72c33612e7fa" CvTextArea="1430, 948, 388, 25" CvTextArgument="Analog Morcellator With Accessories" CvType="Text" DesignTimeRectangle="1432, 944, 387, 29" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Analog Morcellator With Accessories' tag='A' /&gt;" Guid="ae55b105-97f1-4dfa-83eb-e93de09cd8fd" InformativeScreenshot="bf2b9b6ad3fd69508c07d58891155b19.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search: 41 results found for &amp;quot;Endiscopy&amp;quot;' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="d61b0350-e81d-468f-b98a-72c33612e7fa" CvTextArea="1557, 977, 112, 21" CvTextArgument="Rs. 78,152.00" CvType="Text" DesignTimeRectangle="1559, 974, 111, 25" FuzzySelectorArgument="&lt;webctrl type='' tag='INS' class='' aaname='Rs. 78,152.00' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Rs. 78,152.00' /&gt;" Guid="9e0b8f4c-b015-46cc-854d-2b6b56cb1f10" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="aa098c69-d9ed-49f9-8ae1-8f0df8e0eba9" CvElementArea="1172, 916, 265, 66" CvTextArea="1253, 939, 142, 20" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1177, 919, 257, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top t4s-btn-loading__svg is--animated t4s-ani-shake' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Add to cart                                                            ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="9de64d3c-d77a-4e70-b2ee-4b7b9a1fce0f" InformativeScreenshot="0906d48387fbe97499a1958a0d6d52f7.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="aa098c69-d9ed-49f9-8ae1-8f0df8e0eba9" CvElementArea="1172, 916, 265, 66" CvTextArea="1253, 939, 142, 20" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1251, 939, 141, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentname='add' tag='SPAN' type='' class='t4s-btn-atc_text' aaname='Add to cart' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="950b108c-6f1a-4bf6-b26c-1fd4c70288b4" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="d414526d-9662-4ee7-a19e-a69fb8f61a20" CvElementArea="1172, 916, 265, 66" CvTextArea="1253, 939, 142, 20" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1177, 919, 257, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top t4s-btn-loading__svg' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Add to cart                                                            ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="cf3af246-c194-493e-9ad4-8e81dcc4b669" InformativeScreenshot="0906d48387fbe97499a1958a0d6d52f7.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="d414526d-9662-4ee7-a19e-a69fb8f61a20" CvElementArea="1172, 916, 265, 66" CvTextArea="1253, 939, 142, 20" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1255, 939, 140, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentname='add' tag='SPAN' type='' class='t4s-btn-atc_text' aaname='Add to cart' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="7ce2a46e-e072-4a3c-8afd-c840d0c6867d" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="bd524c89-0282-439c-97ac-bf279d422443" ContentHash="UMoJSlZfM0izvcnABhf1Hw" CvElementArea="1336, 110, 25, 25" CvType="CloseButton" DesignTimeRectangle="1856, 223, 75, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Close Cart' tag='BUTTON' /&gt;" Guid="61e8337f-1efc-4646-916c-d28a914652e8" InformativeScreenshot="ac2f462acc18ec258e7db4cb4f1b8eac.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/UayPEmzmBUWRilbQtAjcNw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="ab21cc2f-68b8-4a05-8e70-e335f5ba7009" CvTextArea="1449, 248, 193, 22" CvTextArgument="SHOPPING CART" CvType="Text" DesignTimeRectangle="1451, 240, 405, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Shopping cart' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='SHOPPING CART' /&gt;" Guid="c94b465b-c49e-4adc-baec-a35b5dc05717" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="bd524c89-0282-439c-97ac-bf279d422443" ContentHash="UMoJSlZfM0izvcnABhf1Hw" CvElementArea="1336, 110, 25, 25" CvType="CloseButton" DesignTimeRectangle="1856, 223, 75, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Close Cart' tag='BUTTON' /&gt;" Guid="61e8337f-1efc-4646-916c-d28a914652e8" InformativeScreenshot="4e1c009c647bb01a0304220157418ad7.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/UayPEmzmBUWRilbQtAjcNw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="c6c09302-2fa6-443a-91c5-d006d3de8b0d" CvTextArea="1449, 248, 193, 22" CvTextArgument="SHOPPING CART" CvType="Text" DesignTimeRectangle="1451, 240, 405, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Shopping cart' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='SHOPPING CART' /&gt;" Guid="cfc44128-968b-4899-b7eb-86a8984bef62" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset X="1" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="813ee117-0800-4578-9b2b-36306605182f" CvElementArea="1662, 251, 43, 41" CvType="Icon" DesignTimeRectangle="1667, 255, 33, 33" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' parentid='shopify-section-header-inline' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='svg' class='t4s-icon t4s-icon--search' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="c274a3e0-3e9d-4747-95b4-93a82402d824" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAN3SURBVFhH7ZhpSFRRFICFiH60Eq1UBEH9aKXIaCOstE0ySrJITSs3TM3SLNQgpVBxKW1TqSyVklTCLS0l10xzLXfUJjRFLStxDZpOnDvO8N6d92benYHRH33w/txz33nfm3ffPeeNEUxCjOiBycB/KakwSXV/+wnpBVXw6GU+BMelQVh8JsRnFEFeWR0MDo/S03VGklR9Wyec9r8PUzad0nic8ImEgspG+nRmtEpdCotXXXThHmc44BoEvlFJkJpXDgmZxeAdkQgmDoEwZ+dZ1Ty/O0l0GiZEpWRdfbDx5FVykSVmrpCcW0ZPUSP0aQbM2GZPzjniGQYjY7/pKZIQlML1sfqoF0zdbA0eIU+Y1ktX3w+w9IogYja+d+mwJASlzN1DSNKgx2l0SDJ21xRrMCQunQ5pRU0qJbecJDO29gO5/C8dlszA0Ags238ephnbkqXAgprUuuM+MH2rHbR19tAhZt5+qCc36B4cR4c0wpPKr2jQay0IsX78JvsHBumQKDypgOgUInUr8RV3WC/OXY8hOTMKq+iQKDwpK5/bJEFJTTN3WC+ik/NITqwAUuFJrTnmTbYBXfcXIaoaPxMpW797dEgUntQqi4swd5cDd0hvevp/ESksQVLhSZm53CQJOnq+c4f14nXpR5LTKzyBDonCk3K58ZB5UWoD1xLmjHyWTYdE4UllFlWTBIGxqdxhvVC+PO1fe+mQKDypP3I5zDNxhBXmHjA0MsYN6QRuwLhHbbHxp0MaUdvRsQDjnTkExNAhJrBEYalifXSImlRv/wAsNnUhybJLaumwZLCYY461lpdheJRti1GTQnDzxIQLdjtBzjt2sQfJueR87K1avnTTYa0ISiFZxYpFjwe+lVJ6KtyTDrkp2h6lFNZTVkSlkIr6dvJr4QVmbrcHiwuhEPU8B5pkXao51U0y0jOZOiv2ODywCIcnZKnOK65mK1sapRCs7rhFLNqrWGfKY+VhT9Kzc8ewf8JHpwQfPY7P2nGGqZ5qleLy4s170lFusLoCs8c/FJYfdAPHwFjSOwmB4/gYcX7Zp1Y6LAiTlK7gZ5dSrLxOu5hBpJDS2haVGK5DTRhMCkExlMJORJOYQaUQfKOVYnWtHXSYYHApRCk238RJUGxCpJDKhnbyqY8NAN2/TZgUUtMsg6X7XKGQ+lNkQqXEmJRS/wC1EuidQa85MAAAAABJRU5ErkJggg==" InformativeScreenshot="81d8c6edb69239c93942b66ba801e57e.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="813ee117-0800-4578-9b2b-36306605182f" CvElementArea="1780, 244, 51, 45" CvType="Icon" DesignTimeRectangle="1784, 255, 33, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;0 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='shopify-section-header-inline' tag='A' type='' class='t4s-pr' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='0' /&gt;" Guid="9fb70916-7bf7-4a34-b2ac-ecb675fc4c75" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASmSURBVFhH7ZdtTFtVGMcL3aYz0S9KCMQYZ9TEwTaCsIyIuigZugXjy2a2dZgtvgASoFiED8uWaArGZm6RGBfNXLItKpuSOCeDOQqODJAIdAzXdMBKa7pRWuldKdBQCn/znO2yu3tvy+2LiR/8JU/gnnN7nh/POX3uRYU4Mz8/j7m5Ofj9fmRkZEClUkUe4kVjYWFhgUnNzs6iqqpKmoyPggMwjnJ3PugbQ1f95n9Hiq+Sw+GAWq2WyrB4G01jADgzGutKsbNMj8ZBEuRgrIyzlLBKBoNBRuZ2VBrBwY+ufTKipgPxlwoGg+ws5efnS2VuxwunrICvC3rRuK6NA9xGlMZbirZuZmYGKSkpEpm7knNG6ETjq45bAZhxRImUyTKKL0/9Cq3hGLaUfYo9+w/jk6OnceZCH+aCwcX7aOsCgQCmpqbCnKfQUqqj5qWlKGH1oW+x7GkN1Jk7ZSNbsxej113sfl7qytAoEhISJDJLSbFtDSc19jeHDYX7WOLHCyrwRcM5dF66Ct+0H2arA981d2Jr1SE2/8Aze/BT+x9M6mRzJ+7fsAuq5SslMnclj/RM0dl48T09S1isP8JEQtHQ0oWHNr7LqvnOR19hWeYOPPjsbqzNXC+RWQz+2/fxKsH4rW+fv1t/61qcqP77FiZUYTgmnpLlqu0GUvKKoc7cgdS8Yly2WFFbWyuVEQnAb4Wxfq+yPvXwpvfx5CuV8M8GxFMhuXLNgfySOvw5Ysf09DSGhobCHnZJR+esMBpCdHT6q6lKB080CYcVIexTHMehvLxcKqM0hAt/3WhkUt0DQ8JhRQg7us/nw/j4ONLT06UJlYRw4d37DzOpwNyd/hMJ/LOPGqjH40FbWxuSk5OlSZcK4aK6z04wKWoJ0SCultvtRmtrK9LS0qSJw4Vw0eNnOphUS+cl4XBECN+nvF4v20abzYaioiIkJiZKBeRCuODg8F9M6vUPDgqHI4KvFnV32kZezG63o6enBzU1NcjNzUVSUtJi5ydZus7JyYFWq5W2hE0ldUys+WL01ZITo62k9yyr1QqLxYLPv2lA4lOb8dx2Lfr7+1mYTCYMDAxIpdzcJOtVj75cBpfHK55WjFCMtpLOGB1+qtplswWpG99C6vOF6B8YxPDwMIuRkREmLZEiLvSace/6Qqx7swYTXp94WjG8GJ0xOvxUNft1J1a/WoH7srajqb2bSTqdThb0u8vlkpcizl404Z7sQqzZVg2Pd0o8rRhejBqra+Im0t/QYWW2Bs0dvew1hyo4OTnJgn6nsZBSxM+/9WFF1i6s3VbNtjUW6Cis2fohVmRp8EtHH6sebS0FVZGCvw4rRZAYVWz1a7qoxZwTN9nnaZ3T7b2senwF5WJJKUIoRgkige5/okDLPk/rKEGRFMGLUQLHuEc8LQvdF6kQoViK4MUe21K+pJjthpvdF6kQEZEUwR9+SkiJ5aDxR14qjUqIiFiK+PF8DxOjxGKxa47xmISIqKQIoRiJEPQzNa+EjUcrREQtRZw8143lWRr2WCIJelenaxKOhZikCF6MHuLxECJiliLoXy16Vv5w/nfxVFTERSre/C+llP+k1D/eUrsx3BWtgwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="0a6093ad-17ae-4c94-93f9-48f8c67d7ce2" CvElementArea="1662, 251, 43, 41" CvType="Icon" DesignTimeRectangle="1667, 255, 33, 33" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' parentid='shopify-section-header-inline' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='svg' class='t4s-icon t4s-icon--search' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="04fe22cc-7345-46b0-aedb-9230fa389a81" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAN3SURBVFhH7ZhpSFRRFICFiH60Eq1UBEH9aKXIaCOstE0ySrJITSs3TM3SLNQgpVBxKW1TqSyVklTCLS0l10xzLXfUJjRFLStxDZpOnDvO8N6d92benYHRH33w/txz33nfm3ffPeeNEUxCjOiBycB/KakwSXV/+wnpBVXw6GU+BMelQVh8JsRnFEFeWR0MDo/S03VGklR9Wyec9r8PUzad0nic8ImEgspG+nRmtEpdCotXXXThHmc44BoEvlFJkJpXDgmZxeAdkQgmDoEwZ+dZ1Ty/O0l0GiZEpWRdfbDx5FVykSVmrpCcW0ZPUSP0aQbM2GZPzjniGQYjY7/pKZIQlML1sfqoF0zdbA0eIU+Y1ktX3w+w9IogYja+d+mwJASlzN1DSNKgx2l0SDJ21xRrMCQunQ5pRU0qJbecJDO29gO5/C8dlszA0Ags238ephnbkqXAgprUuuM+MH2rHbR19tAhZt5+qCc36B4cR4c0wpPKr2jQay0IsX78JvsHBumQKDypgOgUInUr8RV3WC/OXY8hOTMKq+iQKDwpK5/bJEFJTTN3WC+ik/NITqwAUuFJrTnmTbYBXfcXIaoaPxMpW797dEgUntQqi4swd5cDd0hvevp/ESksQVLhSZm53CQJOnq+c4f14nXpR5LTKzyBDonCk3K58ZB5UWoD1xLmjHyWTYdE4UllFlWTBIGxqdxhvVC+PO1fe+mQKDypP3I5zDNxhBXmHjA0MsYN6QRuwLhHbbHxp0MaUdvRsQDjnTkExNAhJrBEYalifXSImlRv/wAsNnUhybJLaumwZLCYY461lpdheJRti1GTQnDzxIQLdjtBzjt2sQfJueR87K1avnTTYa0ISiFZxYpFjwe+lVJ6KtyTDrkp2h6lFNZTVkSlkIr6dvJr4QVmbrcHiwuhEPU8B5pkXao51U0y0jOZOiv2ODywCIcnZKnOK65mK1sapRCs7rhFLNqrWGfKY+VhT9Kzc8ewf8JHpwQfPY7P2nGGqZ5qleLy4s170lFusLoCs8c/FJYfdAPHwFjSOwmB4/gYcX7Zp1Y6LAiTlK7gZ5dSrLxOu5hBpJDS2haVGK5DTRhMCkExlMJORJOYQaUQfKOVYnWtHXSYYHApRCk238RJUGxCpJDKhnbyqY8NAN2/TZgUUtMsg6X7XKGQ+lNkQqXEmJRS/wC1EuidQa85MAAAAABJRU5ErkJggg==" InformativeScreenshot="81d8c6edb69239c93942b66ba801e57e.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="0a6093ad-17ae-4c94-93f9-48f8c67d7ce2" CvElementArea="1780, 244, 51, 45" CvType="Icon" DesignTimeRectangle="1784, 255, 33, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;0 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='shopify-section-header-inline' tag='A' type='' class='t4s-pr' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='0' /&gt;" Guid="14114c1a-f3e0-4294-9954-d6a1c29d0cde" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASmSURBVFhH7ZdtTFtVGMcL3aYz0S9KCMQYZ9TEwTaCsIyIuigZugXjy2a2dZgtvgASoFiED8uWaArGZm6RGBfNXLItKpuSOCeDOQqODJAIdAzXdMBKa7pRWuldKdBQCn/znO2yu3tvy+2LiR/8JU/gnnN7nh/POX3uRYU4Mz8/j7m5Ofj9fmRkZEClUkUe4kVjYWFhgUnNzs6iqqpKmoyPggMwjnJ3PugbQ1f95n9Hiq+Sw+GAWq2WyrB4G01jADgzGutKsbNMj8ZBEuRgrIyzlLBKBoNBRuZ2VBrBwY+ufTKipgPxlwoGg+ws5efnS2VuxwunrICvC3rRuK6NA9xGlMZbirZuZmYGKSkpEpm7knNG6ETjq45bAZhxRImUyTKKL0/9Cq3hGLaUfYo9+w/jk6OnceZCH+aCwcX7aOsCgQCmpqbCnKfQUqqj5qWlKGH1oW+x7GkN1Jk7ZSNbsxej113sfl7qytAoEhISJDJLSbFtDSc19jeHDYX7WOLHCyrwRcM5dF66Ct+0H2arA981d2Jr1SE2/8Aze/BT+x9M6mRzJ+7fsAuq5SslMnclj/RM0dl48T09S1isP8JEQtHQ0oWHNr7LqvnOR19hWeYOPPjsbqzNXC+RWQz+2/fxKsH4rW+fv1t/61qcqP77FiZUYTgmnpLlqu0GUvKKoc7cgdS8Yly2WFFbWyuVEQnAb4Wxfq+yPvXwpvfx5CuV8M8GxFMhuXLNgfySOvw5Ysf09DSGhobCHnZJR+esMBpCdHT6q6lKB080CYcVIexTHMehvLxcKqM0hAt/3WhkUt0DQ8JhRQg7us/nw/j4ONLT06UJlYRw4d37DzOpwNyd/hMJ/LOPGqjH40FbWxuSk5OlSZcK4aK6z04wKWoJ0SCultvtRmtrK9LS0qSJw4Vw0eNnOphUS+cl4XBECN+nvF4v20abzYaioiIkJiZKBeRCuODg8F9M6vUPDgqHI4KvFnV32kZezG63o6enBzU1NcjNzUVSUtJi5ydZus7JyYFWq5W2hE0ldUys+WL01ZITo62k9yyr1QqLxYLPv2lA4lOb8dx2Lfr7+1mYTCYMDAxIpdzcJOtVj75cBpfHK55WjFCMtpLOGB1+qtplswWpG99C6vOF6B8YxPDwMIuRkREmLZEiLvSace/6Qqx7swYTXp94WjG8GJ0xOvxUNft1J1a/WoH7srajqb2bSTqdThb0u8vlkpcizl404Z7sQqzZVg2Pd0o8rRhejBqra+Im0t/QYWW2Bs0dvew1hyo4OTnJgn6nsZBSxM+/9WFF1i6s3VbNtjUW6Cis2fohVmRp8EtHH6sebS0FVZGCvw4rRZAYVWz1a7qoxZwTN9nnaZ3T7b2senwF5WJJKUIoRgkige5/okDLPk/rKEGRFMGLUQLHuEc8LQvdF6kQoViK4MUe21K+pJjthpvdF6kQEZEUwR9+SkiJ5aDxR14qjUqIiFiK+PF8DxOjxGKxa47xmISIqKQIoRiJEPQzNa+EjUcrREQtRZw8143lWRr2WCIJelenaxKOhZikCF6MHuLxECJiliLoXy16Vv5w/nfxVFTERSre/C+llP+k1D/eUrsx3BWtgwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="4562b483-d53a-4a4b-b4d6-0ec26e43c6b8" CvElementArea="1447, 443, 456, 63" CvType="InputBox" DesignTimeRectangle="1451, 445, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="02e45400-42e8-4918-a51c-140c46298120" InformativeScreenshot="a96cefd6ff848ffd5ac52e8da1d3fbd2.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="4562b483-d53a-4a4b-b4d6-0ec26e43c6b8" CvElementArea="1447, 352, 456, 65" CvType="InputBox" DesignTimeRectangle="1451, 355, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="582cae7a-af35-41be-b9d7-21c27852b9fa" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="fb2fdb0e-833e-48f9-be02-4e7984c5eb2d" ContentHash="t4Zm_SQvF0mhfO8qDbZYjA" CvElementArea="1051, 244, 305, 43" CvType="InputBox" DesignTimeRectangle="1451, 445, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="22d24191-e666-4c58-955b-605d9a1d8b15" InformativeScreenshot="a96cefd6ff848ffd5ac52e8da1d3fbd2.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/gn7SJGf9EkCZHSdCv0ZuRA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="844bc050-b0ca-4b8c-a20c-458d71b8d89c" CvElementArea="1447, 352, 456, 65" CvType="InputBox" DesignTimeRectangle="1451, 355, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="81dd167f-4fe0-4e31-be0d-d301ff47c13f" SearchSteps="Selector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT(3)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,304.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/storz-type-uterine-manipulator-colpotomiser" CVScreenId="604f8a56-87e5-4fdc-b403-c62e0ecfe20a" ContentHash="QxkVHHKegUuS0Ce0Zeud1Q" CvElementArea="1052, 244, 304, 42" CvType="InputBox" DesignTimeRectangle="1451, 445, 450, 60" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" Guid="77dee8d5-a704-44ea-9b81-5626a910978a" InformativeScreenshot="a96cefd6ff848ffd5ac52e8da1d3fbd2.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/ruDZ_pQFEkmjyLBQ5dzBrg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Storz Type Uterine Manipulator (Colpotomiser) Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="8ced5e6a-8145-4967-84b5-7419e9501f3e" CvElementArea="1447, 352, 456, 65" CvType="InputBox" DesignTimeRectangle="1451, 355, 450, 60" ElementType="DropDown" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" Guid="f2cf8fb9-cac7-4ace-98bf-8970384214f6" SearchSteps="Selector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">Value3</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.ExpectedText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">Value3</CSharpValue>
+                          </InArgument>
+                        </uix:VerifyExecutionTypeIntoOptions.ExpectedText>
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'svg(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="deb9ccf2-463b-4006-8c31-8ef46d8bfc82" CvElementArea="1447, 443, 456, 64" CvType="InputBox" DesignTimeRectangle="1852, 463, 23, 24" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;svg&amp;gt;path' isleaf='1' tag='path' /&gt;" Guid="42f04e39-f85f-4c6c-8f9d-8a8e6263e5b6" InformativeScreenshot="c4085540075b3a907d9425bfe67dce88.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="5e026015-c529-4af0-b3e3-7dedd0612119" CvElementArea="1447, 443, 456, 64" CvType="InputBox" DesignTimeRectangle="1852, 462, 24, 26" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;button&amp;gt;svg' idx='2' tag='svg' /&gt;" Guid="50488837-c098-4536-9371-b19d8f3105e2" InformativeScreenshot="6997ce7c279c96b1837a0bd41b8025fc.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,232.66666666666666" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="4" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Storz Type Uterine Mani…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/search" CVScreenId="08296b29-c801-4b67-871c-553deebb419e" CvTextArea="981, 737, 221, 25" CvTextArgument="Revolving Stool -M.S." CvType="Text" DesignTimeRectangle="982, 733, 220, 29" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*' tag='A' idx='70' /&gt;" Guid="e077dd87-8f6f-4da9-9ead-c20cdf0ac732" InformativeScreenshot="3d7e6d40669fccd76b60713bdb9d0fb7.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search: 72 results found for &amp;quot;Hospital Furniture&amp;quot;' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="08296b29-c801-4b67-871c-553deebb419e" CvTextArea="1097, 767, 107, 19" CvTextArgument="Rs. 2,900.00" CvType="Text" DesignTimeRectangle="1099, 763, 106, 26" FuzzySelectorArgument="&lt;webctrl type='' tag='INS' class='' aaname='Rs. 2,900.00' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Rs. 2,900.00' /&gt;" Guid="6e69d8b6-256e-490d-952c-ecc9a5cee081" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/search" CVScreenId="23f73ba7-8ed4-40f0-ad37-9c821125ed1e" CvTextArea="981, 737, 221, 25" CvTextArgument="Revolving Stool -M.S." CvType="Text" DesignTimeRectangle="982, 733, 220, 29" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*' tag='A' idx='67' /&gt;" Guid="c355a1fe-9f02-4815-86a6-91a93746c810" InformativeScreenshot="3d7e6d40669fccd76b60713bdb9d0fb7.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search: 72 results found for &amp;quot;Hospital furniture&amp;quot;' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="23f73ba7-8ed4-40f0-ad37-9c821125ed1e" CvTextArea="1097, 767, 107, 19" CvTextArgument="Rs. 2,900.00" CvType="Text" DesignTimeRectangle="1099, 763, 106, 26" FuzzySelectorArgument="&lt;webctrl type='' tag='INS' class='' aaname='Rs. 2,900.00' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Rs. 2,900.00' /&gt;" Guid="43f4fab8-f357-44a0-bb02-e3a76e3dc2be" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add to cart(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/analog-morcellator-with-accessories" CVScreenId="9b1ca534-f1bd-4b68-b02f-8bcaf527f730" CvElementArea="1158, 838, 266, 67" CvTextArea="1238, 861, 144, 19" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1177, 841, 257, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top t4s-btn-loading__svg' aaname='Add to cart                                                            ' check:innerText='ADD TO CART' /&gt;" Guid="50a0e3f3-de44-47d5-aec5-1c3e21aabdc3" InformativeScreenshot="9741a32819f6549f9a653207698f830e.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Analog Morcellator With Accessories Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="9b1ca534-f1bd-4b68-b02f-8bcaf527f730" CvElementArea="1158, 838, 266, 67" CvTextArea="1238, 861, 144, 19" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1255, 861, 140, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentname='add' tag='SPAN' type='' class='t4s-btn-atc_text' aaname='Add to cart' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="c087090e-f15f-489d-a63d-d4908f667b9f" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/revolving-stool-m-s" CVScreenId="31707e9f-881c-4a43-bba3-3b0bb4656e51" CvElementArea="1172, 916, 265, 66" CvTextArea="1253, 939, 142, 20" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1177, 919, 257, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top t4s-btn-loading__svg' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="124cd240-07be-4d34-a456-39b5b49252db" InformativeScreenshot="d090059c430cfca97d04cf7f3404c09b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Revolving Stool -M.S. Online at Best Price - TenTabs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="31707e9f-881c-4a43-bba3-3b0bb4656e51" CvElementArea="1172, 916, 265, 66" CvTextArea="1253, 939, 142, 20" CvTextArgument="ADD TO CART" CvType="Button" DesignTimeRectangle="1255, 939, 140, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentname='add' tag='SPAN' type='' class='t4s-btn-atc_text' aaname='Add to cart' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ADD TO CART' /&gt;" Guid="d727ff72-8ea6-4a49-9d32-ba0b44c7dbf3" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset X="1" Y="3" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State 'Storz Type Uterine Mani…(1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1198.6666666666667" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,326" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,262" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="tentabs.in/products/revolving-stool-m-s" CVScreenId="d08dfd2d-709c-4757-a158-650d004701ca" CvElementArea="1875, 241, 37, 37" CvType="CloseButton" DesignTimeRectangle="1856, 223, 75, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Close Cart' tag='BUTTON' /&gt;" Guid="b52ce085-c310-426c-88c3-b572df887da7" InformativeScreenshot="ac2f462acc18ec258e7db4cb4f1b8eac.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Revolving Stool -M.S. Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="d08dfd2d-709c-4757-a158-650d004701ca" CvTextArea="1449, 248, 193, 22" CvTextArgument="SHOPPING CART" CvType="Text" DesignTimeRectangle="1451, 240, 405, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Shopping cart' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='SHOPPING CART' /&gt;" Guid="fad139be-4af4-421b-bd4c-9003ca90df89" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Target>
+                                <uix:TargetAnchorable BrowserURL="tentabs.in/products/storz-type-uterine-manipulator-colpotomiser" CVScreenId="f50a3864-8218-4e33-9276-a3ff4ad94fcf" ContentHash="0Z8MrK4gB061WRF2tGhsdA" CvElementArea="1336, 110, 25, 25" CvType="CloseButton" DesignTimeRectangle="1856, 223, 75, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Close Cart' tag='BUTTON' /&gt;" Guid="dd8d7d9d-fcab-43e1-ab61-a0712e0391c5" InformativeScreenshot="1a58b6e8a3bfc95c68a1c5bc73395b77.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/E0p6AGVA1USJGRUDoL2Q9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Storz Type Uterine Manipulator (Colpotomiser) Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="75b2b68b-a8e9-4fa6-9e73-67e066db7430" CvTextArea="1449, 248, 193, 22" CvTextArgument="SHOPPING CART" CvType="Text" DesignTimeRectangle="1451, 240, 405, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Shopping cart' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='SHOPPING CART' /&gt;" Guid="1782ed43-f752-4d45-adf5-35e1be4369b5" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset X="-7" Y="-3" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:VerifyExecutionOptions.Target>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,520" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,232.66666666666666" sap2010:WorkflowViewState.IdRef="NMouseScroll_5" InteractionMode="HardwareEvents" MovementUnits="3" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5" />
+                        <uix:NMouseScroll KeyModifiers="{x:Null}" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,223.33333333333334" sap2010:WorkflowViewState.IdRef="NMouseScroll_6" InteractionMode="HardwareEvents" MovementUnits="3" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                          <uix:NMouseScroll.Direction>
+                            <InArgument x:TypeArguments="uix:NScrollDirection">
+                              <CSharpValue x:TypeArguments="uix:NScrollDirection" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">UiPath.UIAutomationNext.Enums.NScrollDirection.Up</CSharpValue>
+                            </InArgument>
+                          </uix:NMouseScroll.Direction>
+                        </uix:NMouseScroll>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/revolving-stool-m-s" DesignTimeRectangle="1421, 302, 503, 308" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="4d2ddf58-4d4c-414e-9146-ea58ff0bd5af" InformativeScreenshot="f6f391601abc71875af4e2d0b92e0bad.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Revolving Stool -M.S. Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace">
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">"All items added"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'svg(3)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/infrared-thermometer" CVScreenId="69e0dabd-be2d-4e81-8c07-ec798169ff57" DesignTimeRectangle="1841, 255, 33, 33" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;svg' parentid='shopify-section-header-inline' tag='svg' /&gt;" Guid="a023469f-58e4-49b0-bafe-3b5316c45b77" InformativeScreenshot="0420c33ff550bf1d6ad4654e4d2ba098.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Infrared Thermometer Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/infrared-thermometer" CVScreenId="69e0dabd-be2d-4e81-8c07-ec798169ff57" DesignTimeRectangle="1841, 255, 33, 33" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;svg' parentid='shopify-section-header-inline' tag='svg' /&gt;" Guid="368b75af-8428-4aae-9bf7-a22aa8e5bc94" InformativeScreenshot="75f3a3b66e404a11f5ad656104a4ed18.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Infrared Thermometer Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset X="-1" Y="1" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Checkbox'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,200" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/storz-type-uterine-manipulator-colpotomiser" CVScreenId="33b48c63-889a-438c-bfc1-b58ee1fa0205" ContentHash="X2VJXbZPZ0ewqoZzmMuieA" CvElementArea="1052, 522, 20, 19" CvTextArea="1081, 524, 249, 16" CvTextArgument="Iagree with the terms and conditions." CvType="CheckBox" DesignTimeRectangle="1451, 711, 413, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='*' /&gt;" Guid="e8c07e6f-4dec-43f9-b94c-3131ea531e12" InformativeScreenshot="f07bc4885630d40661d5ccec9ed2df6a.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/xj0WfUQsf0yeZnPsxWPJ7g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Storz Type Uterine Manipulator (Colpotomiser) Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1451, 764, 450, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='View cart ' tag='A' type='' class='t4s-btn__cart t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-custom2 t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='VIEW CART' /&gt;" Guid="e6f30c62-b0a8-4a8c-9a27-11cc81f53b2d" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'View cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,271.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/products/infrared-thermometer" DesignTimeRectangle="1451, 764, 450, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='View cart ' tag='A' /&gt;" Guid="2e17709d-9504-46a9-be5e-a6fb685e7977" InformativeScreenshot="506ac8aabcbcb908904fba68aec6d047.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Infrared Thermometer Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="tentabs.in/products/storz-type-uterine-manipulator-colpotomiser" CVScreenId="a4084a8e-f71c-4326-b993-e8d3618b2f03" ContentHash="O43iJ3GW4Uyg8_OA77TVug" CvTextArea="1151, 572, 86, 11" CvTextArgument="VIEW CART" CvType="Text" DesignTimeRectangle="1451, 764, 450, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='View cart ' tag='A' /&gt;" Guid="718bf028-5f2e-41e9-bb13-5c5b654bedae" InformativeScreenshot="550c6a51c10cea0c0dc4ec9451d7e47a.jpg" Reference="sf_wNNVJFUGAq37gjJCDaw/412dis54dUeU2wl2sJP1cg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buy Storz Type Uterine Manipulator (Colpotomiser) Online at Best Price - TenTabs' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="2b49a018-dd7a-4c9c-ba4e-254efb74f27d" CvElementArea="1448, 710, 30, 29" CvTextArea="1493, 714, 371, 24" CvTextArgument="aagree with the terms and conditions." CvType="CheckBox" DesignTimeRectangle="1451, 711, 413, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='I agree with the terms and conditions. ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='I agree with the terms and conditions.' /&gt;" Guid="c31a9258-9fc5-4957-8aef-d4f46a4e9752" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="452,128" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <uix:NCheckState DisplayName="Check App State 'Shopping cart'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1231.3333333333333" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="6e6033b8-e6f0-4da8-95af-5cede07c6076" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,446" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ar:passedStep str_in_actualStep="{x:Null}" str_in_expectedStep="{x:Null}" sap:VirtualizedContainerService.HintSize="416,382" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_stepDescription="Successfully shown" str_in_stepName="All items show in cart">
+                          <ar:passedStep.str_in_reportId>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">int_reportid</CSharpValue>
+                            </InArgument>
+                          </ar:passedStep.str_in_reportId>
+                          <ar:passedStep.str_in_testId>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">str_testid</CSharpValue>
+                            </InArgument>
+                          </ar:passedStep.str_in_testId>
+                        </ar:passedStep>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,446" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ar:failedStep str_in_actualStep="{x:Null}" str_in_expectedStep="{x:Null}" sap:VirtualizedContainerService.HintSize="416,382" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_stepDescription="Shopping Cart" str_in_stepName="Failed to view cart">
+                          <ar:failedStep.str_in_reportId>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">int_reportid</CSharpValue>
+                            </InArgument>
+                          </ar:failedStep.str_in_reportId>
+                          <ar:failedStep.str_in_testId>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">str_testid</CSharpValue>
+                            </InArgument>
+                          </ar:failedStep.str_in_testId>
+                        </ar:failedStep>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="tentabs.in/cart" CVScreenId="eef79f84-10a4-4cef-82ab-f5e29ad028f9" ContentHash="n823_YuBFUu38-zGLIZksQ" DesignTimeRectangle="82, 384, 1755, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Shopping cart ' innertext='Shopping cart ' /&gt;" Guid="f7089f24-9b32-4605-a1ff-30640b55a077" InformativeScreenshot="95a6ebeec0e9a37cfc9f7f2ecd38c9b1.jpg" Reference="HoUjq_NeVkSz-nEACedS7Q/Vr4L8_u0HkquB6n84Fcrpw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Shopping Cart' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OCREngine>
+              <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                </ActivityFunc.Argument>
+              </ActivityFunc>
+            </uix:NApplicationCard.OCREngine>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="DK2d1Mc58USfBTYlemoOsA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAxUSURBVGhDvZl7bFR1FsebbBQWFQrq8pJ2CqXvTqczLRb6ms6UtrQ8BrObmI1Kk325f2xITDZZQS0m667vKYUy0idvd5cVXDEbd6WdPmmLSPWPVWOyDGAftNBOW1QK987vbM75Pe6dsYK46i/55nvO+d2Z+znn/m6BEhX1HayA0xY96rJXjhZne0fcWcdH3dmBy66s4IgrC0Zc2XDZnR0ccTkCo+5s/6gryzvodniGnTZL5Pf8oAuhx9zZW0eLsvwSlLspLpI516UihxDuOdilInv/iNOx5QdtBsEvu1ZVXXY5xkddWYyDOsKcA0o3aga4aMZpZ5ec6KTm772Ry66sqlF1NORETXBYdyKgmDTGCFnkgGEJSrGdci4Zo9thxGmvirzv/71wMiNF2f00TZqgQ0zScAkqpyqBJLjKC2Ud40yG+RApk3L0oUJ74Dt7GiPOVVtGihxBY5J28cglqBnWgESo4UI7M0MqL0BQDk0qCBM1MViQGbyYb/NE8tzWwscpYSWYmibCySk6DUAuDsFdgBZkskEEpNjGEJZychvFXDK2wWC+DQbzbN/uSA0X2KvCpqtgTDEBkctHr0DkRA0wUcu3MYQjz1dOMXmeEQ/k22AgLwMG86y318Qw/mgTj/mmj1142MQUpHAOw+FEncBkPc/GENIQh5b6DD03gw0X2LZEcs648OUZLsgcRzCCzrfJMxl2VtUUjWlSzJvggASZl0GTJKdpco8UghKsKSblSlnHh3OSbv1iDxVmBsxTND1mNTU1PRNgmNQUI3OhXCtTwBhLyDUYWxGWy5yvSWcX1lj7I3nDFr4waooR4OGA4dObaaph0+QTNDmJXTTX1qSL3AoX1xjOlS6FTeyI5KZle91jefmJIjVNAcUbUEDmOENNUU5yoCwXJht9MH32PdCGBkEtbQrY5BkInX8Z9P6NoPdlgd7nQDG9Fz0LyGXc54CQ2sO63awg9NuiI/mjHEc27yvY54Gz5dkznkV8kfg05QSNqQ7/tIygv+lioydA719PQKE+O9P7MpneixKQfeiZIOoixmt5rvXYwp+CrdljsR95CBxHHoLf/rHEDBgBLR6tED72YPULEJqaCgMcCjJ4+4PrUO+fhjr/NLR9cgM+HdbDrgF9CtiFl5jeawO9z8adYHkewloP1rg0ijNkPfwp2A97KjOPeFjmYQ/YD2+Gf/7sQQHIz6n5LNJZ5TGbaNgTxnSi/zo8vu9zyK6agFU7JsmzdwhVTcCm6qtwov9G2GdCn/kITO/NAL0nA7SeDMwhhOAi1nqsPO5JZzrFVgj1WreaGtjcn3nYwxAeG3nsxTLx0ogXaDVCp8MFqdXpMF79vIIYCobgN80cPEsAZ2EsRHVqhjeF1+JnVBPnXyQoAca0nnQBmw4ilmJ6b5qop/nV8bEd2sRshz0s85AHbIc8gF77eB67uDqNXVidRsAipnxwcymTxwZBNninwoAdzxhSNdM+Cj+jmtCmQD9bBiGCI4GQEZ9CT4VQb6qqgd8SHWU7vGGT7eAmiFRu40b4qNDKLuSksfM52EQakOeksqtvv6mm9+umq+B4JmgSh7WH1YJGTg3y/FdNV9X3sMnTAjqVhXpSmX4qlYD1nhSmn0oBytGxRnkK6F0plVG2Axu9GQc2Atcmcmwg4+BG9vzv8hV04MFUCOSkwsDmEnXTt/qvE8jM4k3MLGPvrbPX1ffpp3MMOFKycu1UMoR6khmPk7i6EqujMvZv8Fv3bwTrgY3M3IT1wAaG9b61NiB4obFX/6xuWPHKJGQ+HTT0jCm+mUzX/dL0FEIXdwvoJBRDhbhTTetOVHtaN+bJb2IDAev+DfA1Yj//UzE7vyqFBbjg2vun6WafDOtgezpIQhAZ31zjM9SC6l1gE30cEEEJNpFDdycwXksA/VQCI3UnQKg7IRCVvn89s+7bAKh00noe71/PMMbaCY+dGji3KkX9zG/96AZkPD3O9ZRwAcjdXDPXg/z6p4xr/iGP0fQAaAhJWmlyJaZ1cde740Hrig9GpTcj5HpG/jVy15RBIDuZnctKYvJx+1qvgfWpcSUJG1abIZbw5vqeli/l14LeRWCgd8cTpKEVTO9aQfuUY9wdD1Fp+ypYWvN6CFcFpDVVyJilNlew6l/kwLmsZNUA3tQMK5V+kzxyT9bCGkBQBSu1nKt7BWg8Znr3coqj0prWB1Oby1kqAjdVAMbkjeU8J5WzVb4y+DA3BbShAbrRm2enIX37OKRtHyNHEHJzHOHy2rSI61o+En86a5MSEPSuOKZ1xQFK5FRDp3qnhWpRKU3lAQ5ZASlN5UyBN5YrYR31h6258OWZPrrXYDBEQFwcbmZF7kXmY/DxEP97Epvo4aCdFgKU0rtiGdZknXKqxQaiUhrKj6c0lEOKhG1YFxGvYySMG8rhzN/r1OOubJiE1O1jkLp9XPjtq+TlCfV9of8+C1pnLOgR0jpjQO+MYXpXDMNY5Z2x/qjUxgovhxOw2IzMG9ZBckMZSyZfh84e9m5SNzz+/nVI2TYGKduFtnEoqt1C8rrj708bDby3huldy5hOgMtYqGsZ0zqXgdaxjHJ0Jay3P1AdlVRXVskhy1hyfRmgCLxeite4eN439KG66Zb6KUjeNqaEUMnbrihQ8174NWOwpX5SfQ8bOSrgHiDpnQ8wvXMpQ6ecakt53CnUsWRTlK3ZGU1wdWWQVF9KTSRRXMbIzcJafSlzv74Fpq5/TjceGA9B8YtBSNp2hcCTnuRuxGOqhtfIWvFLQRgQf4BNTX8OofdymNaxlIN2LBHxEqabHGtaxxKedy5h4F/E/5GfVFfqT6orFaDopYx8r6yJOuai9twpn5oeNvFY/STBfUWiAbMerZ+kz8g18emzAhrhFjOU1rEYtPbFKtc7yTGneqh9sfEP/MS60q2Je0vBUAkzxRH1Epb4Gq/tOnNQQeA6dmYaXC+MQ8KTVyDxySvKpR6tm4BjpjOP640PG2Hcj8eGg2nti5T0jkVM7zByVecyfk9k8TqjE/eWBBP2ljAUAQpI9AQp3Bd7soZPAo+AeX08qMO7/7kONe9+AbtOfgHHzlwLmziuqemr8Fy3D46+lQx6x0LG4RaKeCHo7Qsp5/oJ6FyMayGo4yNXwt6SKgXqQ1/LEnxrgfRaCawU+UrfWmoC85Vi33n4EfbGJ/8KA7zZ6h38AJyHHmHOxkKGcFJ6+/0MpWpt95MQnvt9jLzt/uYweFz4FFb61o5LsJV7CJZrT3FYTo3IHPdE7jz4CDzX5SPAz6YuKWCMsVZz+gA4mjz8s3uK4cLJpRyIwO4DVFjcdh8z51rbvaRr/uiZf0MX7yupihew8b5ipsDJpXgevwf316KrmOq1QnuKmXLaN9fc7PdH7KC334uA5BwOoReIGLUgzHEv1L7g5r/oja8t7lcQQhI+vtYtZN6PzM01eb0bVtS6OXytG+w+J5z/9yLQBRQB+hFyAebC5zOq+eeD1jafPNQ2/1wk71eWxee0xNe6gyt2u0GKAEyOMNxdTIJRjeTie1KR+W4XVB9NZgikt5GY1hbN9LZopvmjRQ1zhJ5HNa55Qfi6oxO5VtS4KpfvdjGUvCmXG1bscnHtdsHyXS4wruF79DlZR6drjc/l1+UJUAOOx/ME8DzQlc9lWutcct0ffXv/WxO/q3gHgcyoIgWpajVFM1zHFUfXc/3t2HIOJgH9c0GTTrD3MK31HqxxYdwyd+Zf6N5qLd/lqiKwmiKCiJMuGhA1trzGBbRn3he5dNTDjVkcyCTdj7CRtbsZ1VvvhpD/7pu/tLdaFq/TE1dTFLTsdBqQO4vAUuNkcaidRi1up5PqtIfXROTn31lAcAgWrrtA99/F0LXWOUxvnYNx8EbLXZWRPN9qWbxOS9xOZ4AAdzqZpVo4z0VciDnfk1L7heyJ/WkcjkDngIAULvKWHwOpdU4/+Gd/sxf2dpZlp7NKgsUicHUhgcZWY8xdxV6+h8qtzYHz78xHMC4Bqrf+WEHrrbOZ1jIrqLXM/nbn/ZsufBqWamczwXoLCVQq5tUCaiCmuoD2YrwFVK//q0UAzgalk7NUrLfeOa61zK4Cf/RX/+Pi+1rUiNdZGest7Cdw3oBZLNZbAGt254DWgrBCJ2eB3jKLaSfvBL11lv+Gf9bWHxR8piWa8cR4C7zLXsn3x7xaEMAmlr2Sz/5ydCloLXcEb7TcEdBO3nlca5nlveH/0ZbvCvp/8b6M+fdIJ3YAAAAASUVORK5CYII=" InformativeScreenshot="c46c2fd13a14e777d511817d0aacc0e2.jpg" Reference="HoUjq_NeVkSz-nEACedS7Q/xMYo-wFvcUC-2Hrkjrcwqg" Selector="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" Url="https://tentabs.in/?srsltid=AfmBOorhK51T6sNXC_TrSQJkl2jAIw6lAkCGN54cAhdEfLbdijkhxToH" Version="V2">
+                <uix:TargetApp.Arguments>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.Arguments>
+                <uix:TargetApp.WorkingDirectory>
+                  <InArgument x:TypeArguments="x:String" />
+                </uix:TargetApp.WorkingDirectory>
+              </uix:TargetApp>
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="522,231.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"test"</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="522,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

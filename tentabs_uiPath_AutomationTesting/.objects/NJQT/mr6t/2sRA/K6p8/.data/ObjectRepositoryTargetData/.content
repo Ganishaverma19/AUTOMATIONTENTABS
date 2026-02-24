@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0xyvsr_PqkmsRxRCVzgUMQ" Reference="HoUjq_NeVkSz-nEACedS7Q/K6p8R31hxEiiuBvawgl_6g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="txplin-my.sharepoint.com/:x:/r/personal/ajitesh_lubana_testingxperts_com/_layouts/15/Doc.aspx" CVScreenId="f95ad165-9ed2-40b3-8786-3c92ae2dda66" DesignTimeRectangle="1591, 672, 246, 75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="180d6551-3c7c-46e0-a11e-6a2950d3b531" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Shopping Cart' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4414cc2e797b2596c26d37f729d3bbad.jpg" xmlns="">0yvnAkYtzhUeoT7IaAXiFfQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

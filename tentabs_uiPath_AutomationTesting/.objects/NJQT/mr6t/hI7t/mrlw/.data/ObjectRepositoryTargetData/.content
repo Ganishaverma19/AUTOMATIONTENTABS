@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4LvHe_-VH0CBBRAoytVAOw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/checkouts/cn/hWN8xB1A9wpym9us6tdGWgpW/en-in" CVScreenId="58b4e5c2-30e7-4359-8e37-16379ccff1e7" DesignTimeRectangle="223, 726, 365, 74" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='TextField0' tag='INPUT' type='text' aaname='First name' /&gt;" Guid="41476261-14f1-40c4-a1c5-a241618c5818" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - TenTabs Medical Devices' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="629525ea58a23e8bdd7c21f21d9e77fb.jpg" xmlns="">0ByCGuIW1c02h0fq52WyrKQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
