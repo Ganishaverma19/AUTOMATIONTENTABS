@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT shipping-address1(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "yhwlDwGQX0eXH1k0b85G5A",
+  "Reference": "HoUjq_NeVkSz-nEACedS7Q/yhwlDwGQX0eXH1k0b85G5A",
+  "ParentRef": "HoUjq_NeVkSz-nEACedS7Q/hI7tTDMAK0CR_nrLpsZMtQ",
+  "Created": "2026-02-19T14:05:39.0563857Z",
+  "Updated": "2026-02-19T14:05:39.0563857Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

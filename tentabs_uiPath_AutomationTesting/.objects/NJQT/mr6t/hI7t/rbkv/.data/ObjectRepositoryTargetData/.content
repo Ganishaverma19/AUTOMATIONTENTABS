@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tjCabCkqmkKjGq2Nj5fJPw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/checkouts/cn/hWN8xB1A9wpym9us6tdGWgpW/en-in" CVScreenId="3c75a77b-c311-4488-b9d7-f2ecc3185d14" CvElementArea="606, 574, 373, 79" CvType="InputBox" DesignTimeRectangle="611, 576, 365, 74" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='TextField1' tag='INPUT' type='text' class='_7ozb2uu _7ozb2ut _1fragemsm _1fragemza _1fragemvp _1fragemye _7ozb2ux _7ozb2uw _1fragemyw _1fragemyr _1fragemz6 _7ozb2u15 _7ozb2u1a _7ozb2u1s _7ozb2uv' placeholder='Last name' aaname='Last name' /&gt;" Guid="7efae35a-ccd7-489c-a53d-1f906885f1d8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Checkout - TenTabs Medical Devices' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3c75a77b-c311-4488-b9d7-f2ecc3185d14" CvElementArea="606, 574, 373, 79" CvType="InputBox" DesignTimeRectangle="628, 590, 80, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='cektnc3 cektnc1 _1fragemsc _1fragemyf _1fragemza _1fragemyw _1fragemyr _1fragemz6 _1fragemz7' tag='LABEL' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Last name' /&gt;" Guid="1ab21240-8e28-4c34-b370-532b1dd20e96" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2a4f2c90ea55f1e8b936729d5040f992.jpg" xmlns="">0k0Xk_ozUHkuypWl7wZ0sTQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Manpreet Kaur",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "p4Lpmi-gT0CCRalK1TFeMQ",
+  "Reference": "HoUjq_NeVkSz-nEACedS7Q/p4Lpmi-gT0CCRalK1TFeMQ",
+  "ParentRef": "HoUjq_NeVkSz-nEACedS7Q/wiRWYcepj0OJOS7mbsRcZQ",
+  "Created": "2026-02-19T05:23:04.4085551Z",
+  "Updated": "2026-02-19T05:23:04.4085551Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

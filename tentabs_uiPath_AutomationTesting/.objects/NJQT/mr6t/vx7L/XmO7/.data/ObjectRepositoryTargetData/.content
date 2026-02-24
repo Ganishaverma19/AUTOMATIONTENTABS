@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mVAbuoueokC-LT6W8lZD6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="tentabs.in/cart" CVScreenId="eae2ec17-d27e-40e5-ba75-99f1aeaa0835" CvElementArea="1400, 688, 29, 28" CvType="CheckBox" DesignTimeRectangle="1405, 697, 18, 18" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;svg' tag='svg' /&gt;" Guid="a85e2828-4ec6-4348-8374-c1b66b64845d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Your Shopping Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0da41562d5e8354a7cedf918ec27af6c.jpg" xmlns="">07z7C8ugwtUe4UQu3ztpWuw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

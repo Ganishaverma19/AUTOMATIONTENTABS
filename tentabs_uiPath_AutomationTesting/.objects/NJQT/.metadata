@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Your Shopping Cart",
+  "Type": "App",
+  "Id": "NJQTfWVLJEWpzfjqHZoc5g",
+  "Reference": "HoUjq_NeVkSz-nEACedS7Q/NJQTfWVLJEWpzfjqHZoc5g",
+  "Created": "2026-02-19T04:27:24.3436367Z",
+  "Updated": "2026-02-19T04:27:24.3436367Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

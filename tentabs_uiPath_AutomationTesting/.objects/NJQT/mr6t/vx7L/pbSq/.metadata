@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Check Out",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "pbSq2cO81kCQQPoIOTU1KQ",
+  "Reference": "HoUjq_NeVkSz-nEACedS7Q/pbSq2cO81kCQQPoIOTU1KQ",
+  "ParentRef": "HoUjq_NeVkSz-nEACedS7Q/vx7LHZyPB0mBT1a2nHcA-A",
+  "Created": "2026-02-19T04:29:27.2322345Z",
+  "Updated": "2026-02-19T04:29:27.2322345Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

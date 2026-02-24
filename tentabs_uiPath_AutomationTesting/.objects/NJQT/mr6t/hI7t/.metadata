@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Your Shopping Cart",
+  "Type": "Screen",
+  "Id": "hI7tTDMAK0CR_nrLpsZMtQ",
+  "Reference": "HoUjq_NeVkSz-nEACedS7Q/hI7tTDMAK0CR_nrLpsZMtQ",
+  "ParentRef": "HoUjq_NeVkSz-nEACedS7Q/mr6tcKCcX0iT6oaCVuu9Bg",
+  "Created": "2026-02-19T12:51:45.7689689Z",
+  "Updated": "2026-02-19T12:51:45.7689689Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
